@@ -1,0 +1,49 @@
+.banner {
+    height: 100vh;
+    background: url(../images/asset_img/banner_bg.png);
+    background-position: bottom;
+}
+
+.banner .intro .heading {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.banner .intro .hi {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.banner .intro .designation {
+    font-size: 1.7rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+/* .banner-picture {
+    background: url(../images/asset_img/image_frame.png) no-repeat;
+    background-position: center;
+    background-size: 450px 450px;
+    text-align: center;
+    min-height: 450px;
+}
+.banner-picture img {
+    margin: 80px 50px;
+    width: 300px;
+} */
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 100vh;
+        padding-top: 25%;
+        background-position: right;
+    }
+    .banner .intro .heading,
+    .banner .intro .hi {
+        font-size: 2rem;
+    }
+    .banner .intro .designation {
+        font-size: 1.2rem;
+    }
+    .banner-picture {
+        margin-top: 3rem;
+    }
+}

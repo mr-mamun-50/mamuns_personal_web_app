@@ -57,7 +57,7 @@ $submenu = ''; ?>
             <!-- order-card end -->
 
             <!-- statustic and process start -->
-            <div class="col-lg-7 col-md-12">
+            <div class="col-lg-6 col-md-12">
                 <div class="card">
                     <div class="card-header">
                         <h5>Statistics</h5>
@@ -79,7 +79,7 @@ $submenu = ''; ?>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-12">
+            <div class="col-lg-6 col-md-12">
                 <div class="card">
                     <div class="card-header">
                         <h5>Article Comments</h5>

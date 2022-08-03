@@ -18,7 +18,7 @@ use App\Http\Controllers\Admin\Auth\AdminPasswordResetLinkController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/dashboard', function () {

@@ -1,4 +1,21 @@
 <!DOCTYPE html>
+<html lang="en">
+
+@include('layouts.includes.head')
+
+<body>
+
+    @include('layouts.includes.navbar')
+
+    @yield('content')
+
+    @include('layouts.includes.script')
+</body>
+
+</html>
+
+
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
@@ -36,4 +53,4 @@
     </div>
 </body>
 
-</html>
+</html> --}}
