@@ -1,5 +1,5 @@
 .banner {
-    height: 100vh;
+    min-height: 100vh;
     background: url(../images/asset_img/banner_bg.png);
     background-position: bottom;
 }
@@ -30,9 +30,21 @@
     width: 300px;
 } */
 
+.skill-title {
+    font-size: 20px;
+}
+.skill-name {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.skill-logo {
+    width: 40px;
+    height: 40px;
+}
+
 @media screen and (max-width: 768px) {
     .banner {
-        height: 100vh;
         padding-top: 25%;
         background-position: right;
     }
@@ -45,5 +57,13 @@
     }
     .banner-picture {
         margin-top: 3rem;
+    }
+    .skill-title {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .banner {
+        padding-top: 8%;
     }
 }
