@@ -52,8 +52,8 @@
 
                 <li class="user-profile header-notification">
                     <a href="#!">
-                        <img src="{{ asset('public/images/my_pics/Screenshot_20220521-161238_PhotoDirector~2.jpg') }}"
-                            class="img-radius border" alt="Admin">
+                        <img src="https://avatars.githubusercontent.com/u/76045663?v=4" class="img-radius border"
+                            alt="Admin">
                         <span>{{ Auth::guard('admin')->user()->name }}</span>
                         <i class="ti-angle-down"></i>
                     </a>

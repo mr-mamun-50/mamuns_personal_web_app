@@ -37,10 +37,13 @@
     font-size: 20px;
     font-weight: 300;
 }
+.skill-card {
+    min-height: calc(40px + 2rem);
+}
 
 .skill-logo {
     width: 40px;
-    height: 40px;
+    max-height: 40px;
 }
 
 @media screen and (max-width: 768px) {

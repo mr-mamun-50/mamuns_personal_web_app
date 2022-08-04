@@ -5,6 +5,10 @@ use App\Http\Controllers\Admin\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\Auth\AdminPasswordResetLinkController;
 
+use App\Http\Controllers\User\UserController;
+
+use App\Http\Controllers\Admin\SkillsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +21,7 @@ use App\Http\Controllers\Admin\Auth\AdminPasswordResetLinkController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [UserController::class, 'home']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -47,5 +49,7 @@ Route::group(['middleware' => 'admin'], function() {
     Route::get('/admin', [HomeController::class, 'index'])->name('admin.dashboard');
     Route::post('/admin/logout', [AuthenticatedSessionController::class, 'destroy'])->name('admin.logout');
 
+    //__Skills route
+    Route::resource('/admin/skills', SkillsController::class);
 
 });

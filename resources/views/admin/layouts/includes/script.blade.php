@@ -132,7 +132,7 @@
     $(document).ready(function() {
         var table = $('#myDataTable').DataTable({
             lengthChange: false,
-            buttons: ['copy', 'excel', 'pdf', 'colvis']
+            buttons: ['copy', 'excel', 'pdf', 'print', 'colvis']
         });
 
         table.buttons().container()

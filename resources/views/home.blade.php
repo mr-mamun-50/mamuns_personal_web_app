@@ -50,24 +50,59 @@
 
                         <div class="collapse mt-3 row" id="web_dev">
                             <hr>
-                            <div class="col-lg-6 col-md-4  my-2">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center">
-                                        <img class="skill-logo" src="{{ asset('public/images/svg_logos/laravel-2.svg') }}"
-                                            alt="...">
-                                        <span class="ms-2 skill-name">Laravel</span>
+                            <p class="mt-2 mb-0">Front-End</p>
+                            <hr>
+                            @foreach ($skills as $skill)
+                                @if ($skill->category == 'web_dev' && $skill->type == 'front_end')
+                                    <div class="col-lg-6 col-md-4  my-2">
+                                        <div class="card skill-card card-body py-3">
+
+                                            <div class="d-flex align-items-center">
+                                                <img class="skill-logo"
+                                                    src="{{ asset('public/images/skill_logos/' . $skill->logo) }}"
+                                                    alt="...">
+                                                <span class="ms-2 skill-name">{{ $skill->name }}</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-4 my-2">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center">
-                                        <img class="skill-logo" src="{{ asset('public/images/svg_logos/react-2.svg') }}"
-                                            alt="...">
-                                        <span class="ms-2 skill-name">React</span>
+                                @endif
+                            @endforeach
+
+                            <p class="mt-3 mb-0">Back-End</p>
+                            <hr>
+                            @foreach ($skills as $skill)
+                                @if ($skill->category == 'web_dev' && $skill->type == 'back_end')
+                                    <div class="col-lg-6 col-md-4  my-2">
+                                        <div class="card skill-card card-body py-3">
+
+                                            <div class="d-flex align-items-center">
+                                                <img class="skill-logo"
+                                                    src="{{ asset('public/images/skill_logos/' . $skill->logo) }}"
+                                                    alt="...">
+                                                <span class="ms-2 skill-name">{{ $skill->name }}</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                @endif
+                            @endforeach
+
+                            <p class="mt-3 mb-0">Database</p>
+                            <hr>
+                            @foreach ($skills as $skill)
+                                @if ($skill->category == 'web_dev' && $skill->type == 'database')
+                                    <div class="col-lg-6 col-md-4  my-2">
+                                        <div class="card skill-card card-body py-3">
+
+                                            <div class="d-flex align-items-center">
+                                                <img class="skill-logo"
+                                                    src="{{ asset('public/images/skill_logos/' . $skill->logo) }}"
+                                                    alt="...">
+                                                <span class="ms-2 skill-name">{{ $skill->name }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -87,33 +122,59 @@
 
                         <div class="collapse mt-3 row" id="mobile_dev">
                             <hr>
-                            <div class="col-lg-6 col-md-4  my-2">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center">
-                                        <img class="skill-logo" src="{{ asset('public/images/svg_logos/flutter.svg') }}"
-                                            alt="...">
-                                        <span class="ms-2 skill-name">Flutter</span>
+                            <p class="mt-2 mb-0">Front-End</p>
+                            <hr>
+                            @foreach ($skills as $skill)
+                                @if ($skill->category == 'mobile_dev' && $skill->type == 'front_end')
+                                    <div class="col-lg-6 col-md-4  my-2">
+                                        <div class="card skill-card card-body py-3">
+
+                                            <div class="d-flex align-items-center">
+                                                <img class="skill-logo"
+                                                    src="{{ asset('public/images/skill_logos/' . $skill->logo) }}"
+                                                    alt="...">
+                                                <span class="ms-2 skill-name">{{ $skill->name }}</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-4 my-2">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center">
-                                        <img class="skill-logo" src="{{ asset('public/images/svg_logos/dart.svg') }}"
-                                            alt="...">
-                                        <span class="ms-2 skill-name">Dart</span>
+                                @endif
+                            @endforeach
+
+                            <p class="mt-3 mb-0">Back-End</p>
+                            <hr>
+                            @foreach ($skills as $skill)
+                                @if ($skill->category == 'mobile_dev' && $skill->type == 'back_end')
+                                    <div class="col-lg-6 col-md-4  my-2">
+                                        <div class="card skill-card card-body py-3">
+
+                                            <div class="d-flex align-items-center">
+                                                <img class="skill-logo"
+                                                    src="{{ asset('public/images/skill_logos/' . $skill->logo) }}"
+                                                    alt="...">
+                                                <span class="ms-2 skill-name">{{ $skill->name }}</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-4 my-2">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center">
-                                        <img class="skill-logo" src="{{ asset('public/images/svg_logos/java-14.svg') }}"
-                                            alt="...">
-                                        <span class="ms-2 skill-name">Java</span>
+                                @endif
+                            @endforeach
+
+                            <p class="mt-3 mb-0">Database</p>
+                            <hr>
+                            @foreach ($skills as $skill)
+                                @if ($skill->category == 'mobile_dev' && $skill->type == 'database')
+                                    <div class="col-lg-6 col-md-4  my-2">
+                                        <div class="card skill-card card-body py-3">
+
+                                            <div class="d-flex align-items-center">
+                                                <img class="skill-logo"
+                                                    src="{{ asset('public/images/skill_logos/' . $skill->logo) }}"
+                                                    alt="...">
+                                                <span class="ms-2 skill-name">{{ $skill->name }}</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -134,26 +195,21 @@
 
                         <div class="collapse mt-3 row" id="programming_languages">
                             <hr>
-                            <div class="col-lg-6 col-md-4  my-2">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center">
-                                        <img class="skill-logo"
-                                            src="{{ asset('public/images/svg_logos/adobe-illustrator-cc-icon.svg') }}"
-                                            alt="...">
-                                        <span class="ms-2 skill-name">Adobe Illustrator</span>
+                            @foreach ($skills as $skill)
+                                @if ($skill->category == 'programming_languages')
+                                    <div class="col-lg-6 col-md-4  my-2">
+                                        <div class="card skill-card card-body py-3">
+
+                                            <div class="d-flex align-items-center">
+                                                <img class="skill-logo"
+                                                    src="{{ asset('public/images/skill_logos/' . $skill->logo) }}"
+                                                    alt="...">
+                                                <span class="ms-2 skill-name">{{ $skill->name }}</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-4 my-2">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center">
-                                        <img class="skill-logo"
-                                            src="{{ asset('public/images/svg_logos/adobe-photoshop-2.svg') }}"
-                                            alt="...">
-                                        <span class="ms-2 skill-name">Adobe Photoshop</span>
-                                    </div>
-                                </div>
-                            </div>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -174,26 +230,21 @@
 
                         <div class="collapse mt-3 row" id="graphic_design">
                             <hr>
-                            <div class="col-lg-6 col-md-4  my-2">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center">
-                                        <img class="skill-logo"
-                                            src="{{ asset('public/images/svg_logos/adobe-illustrator-cc-icon.svg') }}"
-                                            alt="...">
-                                        <span class="ms-2 skill-name">Adobe Illustrator</span>
+                            @foreach ($skills as $skill)
+                                @if ($skill->category == 'graphic_design')
+                                    <div class="col-lg-6 col-md-4  my-2">
+                                        <div class="card skill-card card-body py-3">
+
+                                            <div class="d-flex align-items-center">
+                                                <img class="skill-logo"
+                                                    src="{{ asset('public/images/skill_logos/' . $skill->logo) }}"
+                                                    alt="...">
+                                                <span class="ms-2 skill-name">{{ $skill->name }}</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-4 my-2">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center">
-                                        <img class="skill-logo"
-                                            src="{{ asset('public/images/svg_logos/adobe-photoshop-2.svg') }}"
-                                            alt="...">
-                                        <span class="ms-2 skill-name">Adobe Photoshop</span>
-                                    </div>
-                                </div>
-                            </div>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -214,15 +265,21 @@
 
                         <div class="collapse mt-3 row" id="office_softwares">
                             <hr>
-                            <div class="col-lg-6 col-md-4  my-2">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center">
-                                        <img class="skill-logo" src="{{ asset('public/images/svg_logos/word-1.svg') }}"
-                                            alt="...">
-                                        <span class="ms-2 skill-name">Microsoft Word</span>
+                            @foreach ($skills as $skill)
+                                @if ($skill->category == 'office_softwares')
+                                    <div class="col-lg-6 col-md-4  my-2">
+                                        <div class="card skill-card card-body py-3">
+
+                                            <div class="d-flex align-items-center">
+                                                <img class="skill-logo"
+                                                    src="{{ asset('public/images/skill_logos/' . $skill->logo) }}"
+                                                    alt="...">
+                                                <span class="ms-2 skill-name">{{ $skill->name }}</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -242,16 +299,21 @@
 
                         <div class="collapse mt-3 row" id="other_skills">
                             <hr>
-                            <div class="col-lg-6 col-md-4  my-2">
-                                <div class="card card-body">
-                                    <div class="d-flex align-items-center">
-                                        <img class="skill-logo"
-                                            src="{{ asset('public/images/svg_logos/adobe-illustrator-cc-icon.svg') }}"
-                                            alt="...">
-                                        <span class="ms-2 skill-name">Camtasia</span>
+                            @foreach ($skills as $skill)
+                                @if ($skill->category == 'other_skills')
+                                    <div class="col-lg-6 col-md-4  my-2">
+                                        <div class="card skill-card card-body py-3">
+
+                                            <div class="d-flex align-items-center">
+                                                <img class="skill-logo"
+                                                    src="{{ asset('public/images/skill_logos/' . $skill->logo) }}"
+                                                    alt="...">
+                                                <span class="ms-2 skill-name">{{ $skill->name }}</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                @endif
+                            @endforeach
                         </div>
                     </div>
                 </div>

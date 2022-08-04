@@ -6,15 +6,15 @@
         <ul class="pcoded-item pcoded-left-item">
             <li class="@if ($menu == 'dashboard') active @endif">
                 <a href=" {{ route('admin.dashboard') }} ">
-                    <span class="pcoded-micon"><i class="bi bi-speedometer2"></i><b>D</b></span>
+                    <span class="pcoded-micon"><i class="fas fa-chart-area"></i></span>
                     <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
-            <li class="@if ($menu == 'categories') active @endif">
-                <a href="">
-                    <span class="pcoded-micon"><i class="bi bi-tag"></i></span>
-                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Categories</span>
+            <li class="@if ($menu == 'Skills') active @endif">
+                <a href="{{ route('skills.index') }}">
+                    <span class="pcoded-micon"><i class="fas fa-lightbulb"></i></span>
+                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Skills</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
