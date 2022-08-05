@@ -14,8 +14,9 @@
                     autem ad inventore voluptates quas saepe laborum sint.</p>
 
                 <div class="buttuns my-sm-4">
-                    <a href="" class="btn btn-primary me-2"><i class="fa-brands fa-github fa-xl me-1"></i> Github</a>
-                    <a href="" class="btn btn-info"><i class="fa-solid fa-user-graduate  fa-xl me-1"></i> Get CV</a>
+                    <a href="https://github.com/mr-mamun-50" class="btn btn-primary me-2" target="blank"><i
+                            class="fa-brands fa-github fa-xl me-1"></i> Github</a>
+                    <a href="#" class="btn btn-info"><i class="fa-solid fa-user-graduate  fa-xl me-1"></i> Get CV</a>
                 </div>
             </div>
 

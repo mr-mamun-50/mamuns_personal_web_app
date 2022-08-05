@@ -74,22 +74,10 @@
             </div>
             <!-- Avatar -->
             <div class="dropdown">
-                <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
-                    id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                <a class="" href="https://github.com/mr-mamun-50" target="blank">
                     <img src="https://avatars.githubusercontent.com/u/76045663?v=4" class="rounded-circle"
-                        height="30" alt="user" />
+                        height="30" alt="Profile" />
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
-                    <li>
-                        <a class="dropdown-item" href="#">My profile</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Settings</a>
-                    </li>
-                    <li>
-                        <a class="dropdown-item" href="#">Logout</a>
-                    </li>
-                </ul>
             </div>
         </div>
         <!-- Right elements -->
