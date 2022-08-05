@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('type');
             $table->string('logo');
             $table->string('position');
-            $table->string('visibility')->default(0);
+            $table->string('visibility')->nullable()->default(0);
             $table->timestamps();
         });
     }

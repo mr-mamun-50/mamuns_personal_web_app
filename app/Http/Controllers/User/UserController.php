@@ -10,7 +10,7 @@ class UserController extends Controller
 {
     public function home()
     {
-        $skills = DB::table('skills')->get();
+        $skills = DB::table('skills')->where('visibility', 1)->get();
 
         return view('home', compact('skills'));
     }

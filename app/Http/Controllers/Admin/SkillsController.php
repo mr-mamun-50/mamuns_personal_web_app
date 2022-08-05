@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DB;
 use Illuminate\Support\Str;
+use File;
 
 class SkillsController extends Controller
 {
@@ -93,7 +94,37 @@ class SkillsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $name_slug = Str::of($request->name)->slug('-');
+
+        $data = [
+            'name' => $request->name,
+            'category' => $request->category,
+            'type' => $request->type,
+            'position' => $request->position,
+            'visibility' => $request->visibility,
+        ];
+
+        if($request->logo) {
+
+            if(File::exists(public_path('images/skill_logos/'.$request->old_logo))) {
+                File::delete(public_path('images/skill_logos/'.$request->old_logo));
+            }
+
+            $logo = $request->file('logo');
+            $input['logo'] = time().'-'.$name_slug.'.'.$logo->getClientOriginalExtension();
+            $destinationPath = public_path('images/skill_logos');
+            $logo->move($destinationPath, $input['logo']);
+
+            $data['logo'] = $input['logo'];
+        }
+        else {
+            $data['logo'] = $request->old_logo;
+        }
+
+        DB::table('skills')->where('id', $id)->update($data);
+
+        $notify = ['message'=>'Skill successfully updated!', 'alert-type'=>'success'];
+        return redirect()->back()->with($notify);
     }
 
     /**
@@ -104,6 +135,13 @@ class SkillsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $skill = DB::table('skills')->where('id', $id)->first();
+        if(File::exists(public_path('images/skill_logos/'.$skill->logo))) {
+            File::delete(public_path('images/skill_logos/'.$skill->logo));
+        }
+        DB::table('skills')->where('id', $id)->delete();
+
+        $notify = ['message'=>'Skill successfully deleted!', 'alert-type'=>'success'];
+        return redirect()->back()->with($notify);
     }
 }
