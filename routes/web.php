@@ -21,7 +21,7 @@ use App\Http\Controllers\Admin\SkillsController;
 |
 */
 
-Route::get('/', [UserController::class, 'home']);
+Route::get('/', [UserController::class, 'home'])->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -11,7 +11,7 @@
     <meta name="author" content="codedthemes">
 
     <!-- Favicon icon -->
-    <link rel="icon" href="{{ asset('public/images/logos/TECH_CLOUD_Icon_dark.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('public/images/asset_img/icon.png') }}" type="image/x-icon">
 
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">

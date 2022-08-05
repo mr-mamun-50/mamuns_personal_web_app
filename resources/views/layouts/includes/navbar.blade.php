@@ -10,9 +10,8 @@
         </button>
 
         <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
-            <img src="https://mdbootstrap.com/wp-content/uploads/2018/06/logo-mdb-jquery-small.webp" height="15"
-                alt="M R Mamun" />
+        <a class="navbar-brand" href="{{ route('home') }}">
+            <img src="{{ asset('public/images/asset_img/logo.png') }}" height="25" alt="M R Mamun" />
         </a>
 
         <!-- Collapsible wrapper -->

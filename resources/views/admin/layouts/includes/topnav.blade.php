@@ -16,8 +16,8 @@
                 </div>
             </div>
             <a href="{{ route('admin.dashboard') }}" class="pl-1">
-                <img class="d-flex mr-auto" src="{{ asset('public/images/logos/TECH_CLOUD_Logo.png') }}" alt="M R Mamun"
-                    style="height: 35px; width: 170px" />
+                <img class="d-flex mr-auto" src="{{ asset('public/images/asset_img/logo_white.png') }}" alt="M R Mamun"
+                    style="height: 35px;" />
             </a>
             <a class="mobile-options">
                 <i class="ti-more"></i>
