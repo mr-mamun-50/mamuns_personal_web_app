@@ -47,17 +47,19 @@ $submenu = ''; ?>
                                 @endif
                             </td>
 
-                            <td class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-primary mr-1 pt-1 pb-0 pl-1 pr-0" data-toggle="modal"
-                                    data-target="#{{ 'editSkill' . $skill->id }}"><i
-                                        class="bi bi-pencil-square"></i></button>
+                            <td>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-primary mr-1 py-1 pb-0 pl-1 pr-0"
+                                        data-toggle="modal" data-target="#{{ 'editSkill' . $skill->id }}"><i
+                                            class="bi bi-pencil-square"></i></button>
 
-                                <form action=" {{ route('skills.destroy', $skill->id) }} " method="post">
-                                    @csrf
-                                    <input type="hidden" name="_method" value="DELETE">
-                                    <button type="submit" class="btn btn-danger delete pt-1 pb-0 pl-1 pr-0"><i
-                                            class="bi bi-trash"></i></button>
-                                </form>
+                                    <form action=" {{ route('skills.destroy', $skill->id) }} " method="post">
+                                        @csrf
+                                        <input type="hidden" name="_method" value="DELETE">
+                                        <button type="submit" class="btn btn-danger delete py-1 pb-0 pl-1 pr-0"><i
+                                                class="bi bi-trash"></i></button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
 

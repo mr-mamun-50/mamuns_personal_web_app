@@ -46,6 +46,10 @@
     max-height: 40px;
 }
 
+.project-card {
+    width: calc(100% / 3 - 1rem);
+}
+
 @media screen and (max-width: 768px) {
     .banner {
         padding-top: 25%;

@@ -18,6 +18,13 @@
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
+            <li class="@if ($menu == 'Projects') active @endif">
+                <a href="{{ route('projects.index') }}">
+                    <span class="pcoded-micon"><i class="fas fa-project-diagram"></i></span>
+                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Projects</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
         </ul>
 
         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Services</div>

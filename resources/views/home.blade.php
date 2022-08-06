@@ -47,65 +47,32 @@
         <div class="container">
             <h2 class="text-primary text-center fw-bold">PROJECTS</h2>
             <hr>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mt-3">
-                        <img src="https://i.ytimg.com/vi/0gR0DBux2qQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCNrbLEp9c9TtHLPa0ce4cxV0BdOg"
+            <div class="d-flex justify-content-between flex-wrap">
+
+                @foreach ($projects as $project)
+                    {{-- <div class="col-lg-4 col-md-6"> --}}
+                    <div class="card project-card mt-3 mx-2">
+                        <img src="{{ asset('public/images/project_thumbnails/' . $project->thumbnail) }}"
                             class="card-img-top" alt="...">
 
                         <div class="card-header">
-                            <h5 class="card-title">MyADC</h5>
-                            <h6 class="card-subtitle mb-2 text-muted ">College management with social media</h6>
+                            <h5 class="card-title">{{ $project->title }}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted ">{{ $project->subtitle }}</h6>
                         </div>
                         <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
+                            <p class="card-text">{{ $project->description }}</p>
                         </div>
                         <div class="card-footer pb-3 text-end">
-                            <a href="#" class="btn btn-dark me-1">Github</a>
-                            <a href="#" class="btn btn-primary">Live Project</a>
+                            <a href="{{ $project->github_link }}" class="btn btn-dark me-1" target="blank">Github</a>
+                            <a href="{{ $project->live_link }}" class="btn btn-primary" target="blank">Live Project</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mt-3">
-                        <img src="https://i.ytimg.com/vi/jy-jOw374g4/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCmb5tNAoJu7HQ873Pd2QA3uOhQeg"
-                            class="card-img-top" alt="...">
+                    {{-- </div> --}}
+                @endforeach
 
-                        <div class="card-header">
-                            <h5 class="card-title">TechCloud</h5>
-                            <h6 class="card-subtitle mb-2 text-muted ">Free Resource Providers Web App</h6>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                        <div class="card-footer pb-3 text-end">
-                            <a href="#" class="btn btn-dark me-1">Github</a>
-                            <a href="#" class="btn btn-primary">Live Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card mt-3">
-                        <img src="https://i.ytimg.com/vi/9hmEOdjwC7Y/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDujPC55DI7IjM4vAy4jtWpxhm1zg"
-                            class="card-img-top" alt="...">
-
-                        <div class="card-header">
-                            <h5 class="card-title">MU CSE 50</h5>
-                            <h6 class="card-subtitle mb-2 text-muted ">E-Learning Website</h6>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                        <div class="card-footer pb-3 text-end">
-                            <a href="#" class="btn btn-dark me-1">Github</a>
-                            <a href="#" class="btn btn-primary">Live Project</a>
-                        </div>
-                    </div>
-                </div>
-
+            </div>
+            <div class="text-end mt-4">
+                <a href="#" class="btn btn-link btn-lg">See more...</a>
             </div>
         </div>
     </div>

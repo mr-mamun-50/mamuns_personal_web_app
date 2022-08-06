@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\Auth\AdminPasswordResetLinkController;
 use App\Http\Controllers\User\UserController;
 
 use App\Http\Controllers\Admin\SkillsController;
+use App\Http\Controllers\Admin\ProjectController;
 
 
 /*
@@ -51,5 +52,8 @@ Route::group(['middleware' => 'admin'], function() {
 
     //__Skills route
     Route::resource('/admin/skills', SkillsController::class);
+
+    //__Projects route
+    Route::resource('/admin/projects', ProjectController::class);
 
 });
