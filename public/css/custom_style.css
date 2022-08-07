@@ -46,8 +46,30 @@
     max-height: 40px;
 }
 
-.project-card {
+/* .project-card {
     width: calc(100% / 3 - 1rem);
+} */
+
+.page-header {
+    background: linear-gradient(
+            to right,
+            rgba(255, 162, 0, 0),
+            rgba(31, 140, 235, 0.95),
+            rgba(255, 162, 0, 0.7)
+        ),
+        url(../images/asset_img/Vector_60.jpg) no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    min-height: 240px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    color: #fff;
+}
+.contact-form input,
+.contact-form textarea {
+    color: #f9f9f9;
 }
 
 @media screen and (max-width: 768px) {

@@ -15,4 +15,11 @@ class UserController extends Controller
 
         return view('home', compact('skills', 'projects'));
     }
+
+    public function all_projects()
+    {
+        $projects = DB::table('projects')->where('visibility', 1)->orderby('position', 'asc')->get();
+
+        return view('User.all_projects', compact('projects'));
+    }
 }

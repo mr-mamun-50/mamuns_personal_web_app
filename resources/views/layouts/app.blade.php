@@ -9,6 +9,8 @@
 
     @yield('content')
 
+    @include('layouts.includes.footer')
+
     @include('layouts.includes.script')
 </body>
 

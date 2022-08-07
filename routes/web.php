@@ -23,6 +23,7 @@ use App\Http\Controllers\Admin\ProjectController;
 */
 
 Route::get('/', [UserController::class, 'home'])->name('home');
+Route::get('/more_projects', [UserController::class, 'all_projects'])->name('more_projects');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

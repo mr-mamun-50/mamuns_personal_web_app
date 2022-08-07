@@ -50,29 +50,29 @@
             <div class="d-flex justify-content-between flex-wrap">
 
                 @foreach ($projects as $project)
-                    {{-- <div class="col-lg-4 col-md-6"> --}}
-                    <div class="card project-card mt-3 mx-2">
-                        <img src="{{ asset('public/images/project_thumbnails/' . $project->thumbnail) }}"
-                            class="card-img-top" alt="...">
+                    <div class="col-lg-4 col-md-6 p-2">
+                        <div class="card project-card w-100 h-100">
+                            <img src="{{ asset('public/images/project_thumbnails/' . $project->thumbnail) }}"
+                                class="card-img-top" alt="...">
 
-                        <div class="card-header">
-                            <h5 class="card-title">{{ $project->title }}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted ">{{ $project->subtitle }}</h6>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">{{ $project->description }}</p>
-                        </div>
-                        <div class="card-footer pb-3 text-end">
-                            <a href="{{ $project->github_link }}" class="btn btn-dark me-1" target="blank">Github</a>
-                            <a href="{{ $project->live_link }}" class="btn btn-primary" target="blank">Live Project</a>
+                            <div class="card-header">
+                                <h5 class="card-title">{{ $project->title }}</h5>
+                                <h6 class="card-subtitle mb-2 text-muted ">{{ $project->subtitle }}</h6>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">{{ $project->description }}</p>
+                            </div>
+                            <div class="card-footer pb-3 text-end">
+                                <a href="{{ $project->github_link }}" class="btn btn-dark me-1" target="blank">Github</a>
+                                <a href="{{ $project->live_link }}" class="btn btn-primary" target="blank">Live Project</a>
+                            </div>
                         </div>
                     </div>
-                    {{-- </div> --}}
                 @endforeach
 
             </div>
-            <div class="text-end mt-4">
-                <a href="#" class="btn btn-link btn-lg">See more...</a>
+            <div class="text-end mt-3">
+                <a href="{{ route('more_projects') }}" class="btn btn-link btn-lg">See more projects...</a>
             </div>
         </div>
     </div>

@@ -20,16 +20,16 @@
             <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="{{ route('home') }}/#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="{{ route('home') }}/#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Videos</a>
+                    <a class="nav-link" href="{{ route('home') }}/#videos">Videos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Reviews</a>
