@@ -49,12 +49,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.bootstrap5.min.css">
 
-    <!-- summernote -->
-    <link rel="stylesheet" href="{{ asset('public/adm') }}/plugins/summernote/summernote-bs4.min.css">
+    <!-- include summernote css -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
 
-
-    <style>
-
-
-    </style>
 </head>

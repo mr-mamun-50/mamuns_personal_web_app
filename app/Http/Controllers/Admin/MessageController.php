@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use DB;
+use Mail;
 
 class MessageController extends Controller
 {
@@ -38,7 +39,7 @@ class MessageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -72,7 +73,24 @@ class MessageController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $info = DB::table('messages')->where('id', $id)->first();
+
+        $data = [
+            'name' => $info->name,
+            'email' => $info->email,
+            'message' => $info->message,
+            'subject' => $request->subject,
+            'reply_msg' => $request->reply_msg,
+        ];
+        // dd($data);
+
+        Mail::send('admin.reply_msg', $data, function ($message) use ($data) {
+            $message->to($data['email']);
+            $message->subject($data['subject']);
+        });
+
+        $notify = ['message'=>'Reply mail sent successfully!', 'alert-type'=>'success'];
+        return redirect()->back()->with($notify);
     }
 
     /**

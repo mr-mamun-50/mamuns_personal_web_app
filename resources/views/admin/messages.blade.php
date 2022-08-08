@@ -1,6 +1,6 @@
 @extends('admin.layouts.app')
 @section('title')
-    messages
+    Messages
 @endsection
 <?php $menu = 'messages';
 $submenu = ''; ?>
@@ -26,14 +26,19 @@ $submenu = ''; ?>
                     @foreach ($messages as $sl => $message)
                         <tr>
                             <td>{{ ++$sl }}</td>
-                            <td>{{ $message->name }}</td>
+                            <td>
+                                {{ $message->name }}
+                                <div class="small text-muted">{{ date('d F, Y | h:i A', strtotime($message->msg_date)) }}
+                                </div>
+                            </td>
                             <td>{{ $message->email }}</td>
                             <td>{{ $message->message }}</td>
                             <td>
                                 <div class="d-flex justify-content-center">
 
-                                    <button class="btn btn-primary py-1 pb-0 pl-1 pr-0 mr-2" type="button"><i
-                                            class="fas fa-reply"></i></button>
+                                    <button class="btn btn-primary py-1 pb-0 pl-1 pr-0 mr-2" type="button" data-toggle="modal"
+                                        data-target="#{{ 'replyMail' . $message->id }}">
+                                        <i class="fas fa-reply"></i></button>
 
                                     <form action=" {{ route('messages.destroy', $message->id) }} " method="post">
                                         @csrf
@@ -44,6 +49,45 @@ $submenu = ''; ?>
                                 </div>
                             </td>
                         </tr>
+
+
+                        <!-- Modal for reply message -->
+                        <div class="modal fade" id="{{ 'replyMail' . $message->id }}" data-backdrop="static"
+                            data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-default text-dark rounded">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Mail to: {{ $message->name }}</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+
+                                    <form action="{{ route('messages.update', $message->id) }}" method="post"
+                                        enctype="multipart/form-data">
+                                        @csrf
+                                        <input type="hidden" name="_method" value="put">
+
+                                        <div class="modal-body">
+
+                                            <div class="form-group">
+                                                <label for="">Subject</label>
+                                                <input type="text" name="subject" class="form-control">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="">Message</label>
+                                                <textarea name="reply_msg" class="summernote"></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn hor-grd btn-grd-primary">Send Mail</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
                     @endforeach
                 </tbody>
             </table>

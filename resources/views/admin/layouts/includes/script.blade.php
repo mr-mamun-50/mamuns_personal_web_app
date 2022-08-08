@@ -59,8 +59,8 @@
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.colVis.min.js">
 </script>
 
-<!-- Summernote -->
-<script src="{{ asset('public/adm') }}/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- include summernote js -->
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
 <!-- Google charts -->
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
