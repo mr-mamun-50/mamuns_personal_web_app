@@ -25,6 +25,8 @@ use App\Http\Controllers\Admin\ProjectController;
 Route::get('/', [UserController::class, 'home'])->name('home');
 Route::get('/more_projects', [UserController::class, 'all_projects'])->name('more_projects');
 
+Route::post('/message/send', [UserController::class, 'message_store'])->name('message.send');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

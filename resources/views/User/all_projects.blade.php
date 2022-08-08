@@ -6,7 +6,7 @@
     </div>
 
     {{-- Projects section started --}}
-    <div class="skills py-5 bg-light" id="projects">
+    <div class="skills py-5" id="projects">
         <div class="container">
             <div class="d-flex justify-content-between flex-wrap">
 

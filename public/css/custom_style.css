@@ -1,3 +1,16 @@
+body {
+    background: url(../images/asset_img/body-bg.svg);
+    background-size: cover;
+}
+.underline img {
+    height: 7px;
+    /* width: 35px; */
+    opacity: 50%;
+}
+.underline .flip {
+    transform: scaleX(-1);
+}
+
 .banner {
     min-height: 100vh;
     background: url(../images/asset_img/banner_bg.png) no-repeat;

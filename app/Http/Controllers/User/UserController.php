@@ -22,4 +22,22 @@ class UserController extends Controller
 
         return view('User.all_projects', compact('projects'));
     }
+
+    //__function for contacts message store
+    public function message_store(Request $request)
+    {
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'message' => $request->message,
+            'msg_date' => now().date(''),
+        ];
+
+        // dd($data);
+
+        DB::table('messages')->insert($data);
+
+        $notify = ['message' => 'Message sent successfully', 'alert-type' => 'success'];
+        return redirect()->back()->with($notify);
+    }
 }

@@ -31,10 +31,13 @@
 
 
     {{-- Skills section started --}}
-    <div class="skills py-5 bg-light" id="skills">
+    <div class="skills py-5" id="skills">
         <div class="container">
             <h2 class="text-primary text-center fw-bold">SKILLS</h2>
-            <hr>
+            <div class="d-flex justify-content-center underline mb-3">
+                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+                <img class="flip" src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+            </div>
 
             @include('User.skills')
         </div>
@@ -43,10 +46,14 @@
 
 
     {{-- Projects section started --}}
-    <div class="skills py-5 bg-light" id="projects">
+    <div class="skills py-5" id="projects">
         <div class="container">
             <h2 class="text-primary text-center fw-bold">PROJECTS</h2>
-            <hr>
+            <div class="d-flex justify-content-center underline mb-3">
+                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+                <img class="flip" src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+            </div>
+
             <div class="d-flex justify-content-between flex-wrap">
 
                 @foreach ($projects as $project)

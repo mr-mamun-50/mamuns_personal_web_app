@@ -82,22 +82,25 @@
                         <i class="fas fa-address-book me-1"></i> Contact Me
                     </h6>
 
-                    <form action="" method="POST" class="contact-form">
+                    <form action="{{ route('message.send') }}" method="POST" class="contact-form">
+                        @csrf
                         <!-- Name input -->
                         <div class="form-outline mb-3">
-                            <input type="text" id="form4Example1" class="form-control form-control-sm" />
+                            <input type="text" name="name" id="form4Example1"
+                                class="form-control form-control-sm" />
                             <label class="form-label text-light" for="form4Example1">Name</label>
                         </div>
 
                         <!-- Email input -->
                         <div class="form-outline mb-3">
-                            <input type="email" id="form4Example2" class="form-control form-control-sm" />
+                            <input type="email" name="email" id="form4Example2"
+                                class="form-control form-control-sm" />
                             <label class="form-label text-light" for="form4Example2">Email address</label>
                         </div>
 
                         <!-- Message input -->
                         <div class="form-outline mb-3">
-                            <textarea class="form-control form-control-sm" id="form4Example3" rows="3"></textarea>
+                            <textarea name="message" class="form-control form-control-sm" id="form4Example3" rows="3"></textarea>
                             <label class="form-label text-light" for="form4Example3">Message</label>
                         </div>
 
