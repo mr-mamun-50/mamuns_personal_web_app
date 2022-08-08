@@ -20,30 +20,24 @@
             </li>
             <li class="@if ($menu == 'Projects') active @endif">
                 <a href="{{ route('projects.index') }}">
-                    <span class="pcoded-micon"><i class="fas fa-project-diagram"></i></span>
+                    <span class="pcoded-micon"><i class="fas fa-splotch"></i></span>
                     <span class="pcoded-mtext" data-i18n="nav.dash.main">Projects</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
         </ul>
 
-        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Services</div>
+        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">User</div>
         <ul class="pcoded-item pcoded-left-item">
 
-            <li class="@if ($menu == 'Softwares') active @endif">
-                <a href="">
-                    <span class="pcoded-micon"><i class="bi bi-window-sidebar"></i></span>
-                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Softwares</span>
+            <li class="@if ($menu == 'messages') active @endif">
+                <a href="{{ route('messages.index') }}">
+                    <span class="pcoded-micon"><i class="fas fa-comment-dots"></i></span>
+                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Messages</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
-            <li class="@if ($menu == 'Designs') active @endif">
-                <a href="">
-                    <span class="pcoded-micon"><i class="bi bi-bezier"></i></span>
-                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Designs</span>
-                    <span class="pcoded-mcaret"></span>
-                </a>
-            </li>
+
         </ul>
 
 

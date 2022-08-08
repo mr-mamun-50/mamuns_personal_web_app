@@ -1,11 +1,12 @@
 body {
     background: url(../images/asset_img/body-bg.svg);
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: 100%;
 }
 .underline img {
     height: 7px;
     /* width: 35px; */
-    opacity: 50%;
+    opacity: 70%;
 }
 .underline .flip {
     transform: scaleX(-1);
@@ -85,6 +86,58 @@ body {
     color: #f9f9f9;
 }
 
+/* owl dots */
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 3px;
+    border: 1.5px solid #35b9e7 !important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+    background: #35b9e7 !important;
+    width: 25px;
+}
+
+.owl-carousel {
+    width: 100%;
+}
+/* owl dots */
+/* owl nav */
+.owl-nav button {
+    border: none !important;
+    outline: none !important;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #616161 !important;
+    font-size: 65px !important;
+    background: none !important;
+}
+
+.owl-prev {
+    left: -2%;
+}
+
+.owl-next {
+    right: -2%;
+}
+/* owl nav */
+
 @media screen and (max-width: 768px) {
     .banner {
         padding-top: 25%;
@@ -95,7 +148,7 @@ body {
         font-size: 2rem;
     }
     .banner .intro .designation {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .banner-picture {
         margin-top: 3rem;

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use DB;
 
 class MessageController extends Controller
 {
@@ -14,7 +15,9 @@ class MessageController extends Controller
      */
     public function index()
     {
-        //
+        $messages = DB::table('messages')->orderby('id', 'desc')->get();
+
+        return view('admin.messages', compact('messages'));
     }
 
     /**
@@ -80,6 +83,9 @@ class MessageController extends Controller
      */
     public function destroy($id)
     {
-        //
+        db::table('messages')->where('id', $id)->delete();
+
+        $notify = ['message'=>'Message deleted successfully!', 'alert-type'=>'success'];
+        return redirect()->back()->with($notify);
     }
 }

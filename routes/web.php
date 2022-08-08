@@ -9,6 +9,7 @@ use App\Http\Controllers\User\UserController;
 
 use App\Http\Controllers\Admin\SkillsController;
 use App\Http\Controllers\Admin\ProjectController;
+use App\Http\Controllers\Admin\MessageController;
 
 
 /*
@@ -58,5 +59,8 @@ Route::group(['middleware' => 'admin'], function() {
 
     //__Projects route
     Route::resource('/admin/projects', ProjectController::class);
+
+    //__Messages route
+    Route::resource('/admin/messages', MessageController::class);
 
 });

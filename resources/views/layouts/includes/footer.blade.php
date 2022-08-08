@@ -105,7 +105,7 @@
                         </div>
 
                         <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-block mb-4"> Send
+                        <button type="submit" class="btn btn-primary btn-block mb-4"> Send Message
                             <i class="fas fa-paper-plane ms-1"></i></button>
                     </form>
                 </div>

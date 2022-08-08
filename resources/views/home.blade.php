@@ -30,19 +30,33 @@
     {{-- Banner section ended --}}
 
 
-    {{-- Skills section started --}}
-    <div class="skills py-5" id="skills">
+
+    {{-- Services section started --}}
+    <div class="skills py-5" id="projects">
         <div class="container">
-            <h2 class="text-primary text-center fw-bold">SKILLS</h2>
+            <h2 class="text-primary text-center fw-bold">SERVICES</h2>
             <div class="d-flex justify-content-center underline mb-3">
                 <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
                 <img class="flip" src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
             </div>
 
-            @include('User.skills')
+            <!-- Set up your HTML -->
+            <div class="owl-carousel">
+                <div class="px-5">
+                    <img class="img-fluid" src="{{ asset('public/images/asset_img/w-a-d.png') }}" alt="">
+                </div>
+                <div class="px-5">
+                    <img class="img-fluid" src="{{ asset('public/images/asset_img/m-a-d.png') }}" alt="">
+                </div>
+                <div class="px-5">
+                    <img class="img-fluid" src="{{ asset('public/images/asset_img/w-h.png') }}" alt="">
+                </div>
+                <div class="px-5">
+                    <img class="img-fluid" src="{{ asset('public/images/asset_img/g-d.png') }}" alt="">
+                </div>
+            </div>
         </div>
     </div>
-    {{-- Skills section ended --}}
 
 
     {{-- Projects section started --}}
@@ -84,4 +98,19 @@
         </div>
     </div>
     {{-- Projects section ended --}}
+
+
+    {{-- Skills section started --}}
+    <div class="skills py-5" id="skills">
+        <div class="container">
+            <h2 class="text-primary text-center fw-bold">SKILLS</h2>
+            <div class="d-flex justify-content-center underline mb-3">
+                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+                <img class="flip" src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+            </div>
+
+            @include('User.skills')
+        </div>
+    </div>
+    {{-- Skills section ended --}}
 @endsection
