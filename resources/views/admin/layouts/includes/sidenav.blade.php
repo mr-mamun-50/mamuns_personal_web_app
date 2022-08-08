@@ -25,6 +25,13 @@
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
+            <li class="@if ($menu == 'videos') active @endif">
+                <a href="{{ route('videos.index') }}">
+                    <span class="pcoded-micon"><i class="fas fa-video"></i></span>
+                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Videos</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
         </ul>
 
         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">User</div>

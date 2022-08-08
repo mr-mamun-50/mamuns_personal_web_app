@@ -10,6 +10,7 @@ use App\Http\Controllers\User\UserController;
 use App\Http\Controllers\Admin\SkillsController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\MessageController;
+use App\Http\Controllers\Admin\VideoController;
 
 
 /*
@@ -25,6 +26,7 @@ use App\Http\Controllers\Admin\MessageController;
 
 Route::get('/', [UserController::class, 'home'])->name('home');
 Route::get('/more_projects', [UserController::class, 'all_projects'])->name('more_projects');
+Route::get('/more_videos', [UserController::class, 'all_videos'])->name('more_videos');
 
 Route::post('/message/send', [UserController::class, 'message_store'])->name('message.send');
 
@@ -62,5 +64,8 @@ Route::group(['middleware' => 'admin'], function() {
 
     //__Messages route
     Route::resource('/admin/messages', MessageController::class);
+
+    //__Videos route
+    Route::resource('/admin/videos', VideoController::class);
 
 });

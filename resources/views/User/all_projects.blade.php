@@ -8,7 +8,7 @@
     {{-- Projects section started --}}
     <div class="skills py-5" id="projects">
         <div class="container">
-            <div class="d-flex justify-content-between flex-wrap">
+            <div class="d-flex flex-wrap">
 
                 @foreach ($projects as $project)
                     <div class="col-lg-4 col-md-6 p-2">

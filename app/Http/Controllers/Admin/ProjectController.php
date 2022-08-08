@@ -108,7 +108,6 @@ class ProjectController extends Controller
             'github_link' => $request->github_link,
             'live_link' => $request->live_link,
             'visibility' => $request->visibility,
-            'post_date' => now().date(''),
 
         ];
 

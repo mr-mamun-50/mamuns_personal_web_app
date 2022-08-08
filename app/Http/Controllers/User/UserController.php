@@ -12,8 +12,9 @@ class UserController extends Controller
     {
         $skills = DB::table('skills')->where('visibility', 1)->orderby('position', 'asc')->get();
         $projects = DB::table('projects')->where('visibility', 1)->orderby('position', 'asc')->take(3)->get();
+        $videos = DB::table('videos')->where('visibility', 1)->orderby('position', 'asc')->take(3)->get();
 
-        return view('home', compact('skills', 'projects'));
+        return view('home', compact('skills', 'projects', 'videos'));
     }
 
     public function all_projects()
@@ -21,6 +22,13 @@ class UserController extends Controller
         $projects = DB::table('projects')->where('visibility', 1)->orderby('position', 'asc')->get();
 
         return view('User.all_projects', compact('projects'));
+    }
+
+    public function all_videos()
+    {
+        $videos = DB::table('videos')->where('visibility', 1)->orderby('position', 'asc')->get();
+
+        return view('User.all_videos', compact('videos'));
     }
 
     //__function for contacts message store

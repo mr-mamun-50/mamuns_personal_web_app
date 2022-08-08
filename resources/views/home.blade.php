@@ -32,7 +32,7 @@
 
 
     {{-- Services section started --}}
-    <div class="skills py-5" id="projects">
+    <div class="skills py-5" id="services">
         <div class="container">
             <h2 class="text-primary text-center fw-bold">SERVICES</h2>
             <div class="d-flex justify-content-center underline mb-3">
@@ -57,6 +57,22 @@
             </div>
         </div>
     </div>
+    {{-- Services section ended --}}
+
+
+    {{-- Skills section started --}}
+    <div class="skills py-5" id="skills">
+        <div class="container">
+            <h2 class="text-primary text-center fw-bold">SKILLS</h2>
+            <div class="d-flex justify-content-center underline mb-3">
+                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+                <img class="flip" src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+            </div>
+
+            @include('User.skills')
+        </div>
+    </div>
+    {{-- Skills section ended --}}
 
 
     {{-- Projects section started --}}
@@ -100,17 +116,38 @@
     {{-- Projects section ended --}}
 
 
-    {{-- Skills section started --}}
-    <div class="skills py-5" id="skills">
+    {{-- Videos section started --}}
+    <div class="skills py-5" id="videos">
         <div class="container">
-            <h2 class="text-primary text-center fw-bold">SKILLS</h2>
+            <h2 class="text-primary text-center fw-bold">YOUTUBE VIDEOS</h2>
             <div class="d-flex justify-content-center underline mb-3">
                 <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
                 <img class="flip" src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
             </div>
 
-            @include('User.skills')
+            <div class="d-flex justify-content-between flex-wrap">
+
+                @foreach ($videos as $video)
+                    <div class="col-lg-4 col-md-6 p-2">
+                        <div class="card video-card w-100 h-100">
+
+                            <iframe class="card-img-top" width="100%" height="240"
+                                src="https://www.youtube.com/embed/{{ $video->video_link }}" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                            <div class="card-footer">
+                                <h5 class="card-title">{{ $video->title }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+
+            </div>
+            <div class="text-end mt-3">
+                <a href="{{ route('more_videos') }}" class="btn btn-link btn-lg">See more videos...</a>
+            </div>
         </div>
     </div>
-    {{-- Skills section ended --}}
 @endsection

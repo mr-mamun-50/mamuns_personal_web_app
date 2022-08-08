@@ -23,22 +23,19 @@
                     <a class="nav-link" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}/#skills">Skills</a>
+                    <a class="nav-link" href="{{ route('home') }}/#services">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}/#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('home') }}/#skills">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}/#videos">Videos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Reviews</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Courses</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Classroom</a>
                 </li>
             </ul>
             <!-- Left links -->
