@@ -32,6 +32,13 @@
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>
+            <li class="@if ($menu == 'qualifications') active @endif">
+                <a href="{{ route('qualifications.index') }}">
+                    <span class="pcoded-micon"><i class="fas fa-ribbon"></i></span>
+                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Qualifications</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
         </ul>
 
         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">User</div>

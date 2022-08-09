@@ -14,7 +14,11 @@ class UserController extends Controller
         $projects = DB::table('projects')->where('visibility', 1)->orderby('position', 'asc')->take(3)->get();
         $videos = DB::table('videos')->where('visibility', 1)->orderby('position', 'asc')->take(3)->get();
 
-        return view('home', compact('skills', 'projects', 'videos'));
+        $AcP = DB::table('qualifications')->where('id', 1)->first();
+        $Exp = DB::table('qualifications')->where('id', 2)->first();
+        $TrC = DB::table('qualifications')->where('id', 3)->first();
+
+        return view('home', compact('skills', 'projects', 'videos', 'AcP', 'Exp', 'TrC'));
     }
 
     public function all_projects()

@@ -69,3 +69,13 @@
         }
     @endif
 </script>
+
+{{-- Read more --}}
+<script>
+    $(document).ready(function() {
+        $(".see_more").click(function() {
+            $(".card_content").removeClass("card_height");
+            $(".see_more").hide();
+        });
+    });
+</script>

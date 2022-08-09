@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\SkillsController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\VideoController;
+use App\Http\Controllers\Admin\QualificationsController;
 
 
 /*
@@ -67,5 +68,8 @@ Route::group(['middleware' => 'admin'], function() {
 
     //__Videos route
     Route::resource('/admin/videos', VideoController::class);
+
+    //__Qualifications route
+    Route::resource('/admin/qualifications', QualificationsController::class);
 
 });

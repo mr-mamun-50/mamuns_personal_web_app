@@ -32,12 +32,12 @@
 
 
     {{-- Services section started --}}
-    <div class="skills py-5" id="services">
+    <div class="services py-5" id="services">
         <div class="container">
             <h2 class="text-primary text-center fw-bold">SERVICES</h2>
             <div class="d-flex justify-content-center underline mb-3">
-                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
                 <img class="flip" src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
             </div>
 
             <!-- Set up your HTML -->
@@ -65,8 +65,8 @@
         <div class="container">
             <h2 class="text-primary text-center fw-bold">SKILLS</h2>
             <div class="d-flex justify-content-center underline mb-3">
-                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
                 <img class="flip" src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
             </div>
 
             @include('User.skills')
@@ -76,12 +76,12 @@
 
 
     {{-- Projects section started --}}
-    <div class="skills py-5" id="projects">
+    <div class="projects py-5" id="projects">
         <div class="container">
             <h2 class="text-primary text-center fw-bold">PROJECTS</h2>
             <div class="d-flex justify-content-center underline mb-3">
-                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
                 <img class="flip" src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
             </div>
 
             <div class="d-flex justify-content-between flex-wrap">
@@ -117,12 +117,12 @@
 
 
     {{-- Videos section started --}}
-    <div class="skills py-5" id="videos">
+    <div class="Videos py-5" id="videos">
         <div class="container">
             <h2 class="text-primary text-center fw-bold">YOUTUBE VIDEOS</h2>
             <div class="d-flex justify-content-center underline mb-3">
-                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
                 <img class="flip" src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
             </div>
 
             <div class="d-flex justify-content-between flex-wrap">
@@ -147,6 +147,85 @@
             </div>
             <div class="text-end mt-3">
                 <a href="{{ route('more_videos') }}" class="btn btn-link btn-lg">See more videos...</a>
+            </div>
+        </div>
+    </div>
+
+
+    {{-- Qualifications section started --}}
+    <div class="qualifications py-5" id="qualifications">
+        <div class="container">
+            <h2 class="text-primary text-center fw-bold">QUALIFICATIONS</h2>
+            <div class="d-flex justify-content-center underline mb-3">
+                <img class="flip" src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+                <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
+            </div>
+
+            <div class="d-flex justify-content-between flex-wrap">
+
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="card video-card w-100 h-100">
+
+                        <img class="card-img-top my-3" src="{{ asset('public/images/asset_img/certificate.svg') }}"
+                            alt="" style="height:120px">
+                        <h5 class="card-header text-center bg-primary text-white">
+                            Training & Certifications
+                        </h5>
+                        <div class="card-body py-3 position-relative">
+                            <div class="card_content card_height">
+                                @php
+                                    echo $AcP->qualifications;
+                                @endphp
+                            </div>
+                            <div class="show_btn position-absolute bottom-0 end-0 w-100 text-end pt-4 rounded-5">
+                                <button class="btn btn-link see_more pb-3">See more...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="card video-card w-100 h-100">
+
+                        <img class="card-img-top my-3" src="{{ asset('public/images/asset_img/briefcase.svg') }}"
+                            alt="" style="height:120px">
+                        <h5 class="card-header text-center bg-primary text-white">
+                            Experiences
+                        </h5>
+                        <div class="card-body py-3 position-relative">
+                            <div class="card_content card_height">
+                                @php
+                                    echo $Exp->qualifications;
+                                @endphp
+                            </div>
+                            <div class="show_btn position-absolute bottom-0 end-0 w-100 text-end pt-4 rounded-5">
+                                <button class="btn btn-link see_more pb-3">See more...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="card video-card w-100 h-100">
+
+                        <img class="card-img-top my-3" src="{{ asset('public/images/asset_img/trophy.svg') }}"
+                            alt="" style="height:120px">
+                        <h5 class="card-header text-center bg-primary text-white">
+                            Achievement & Participation
+                        </h5>
+                        <div class="card-body py-3 position-relative">
+                            <div class="card_content card_height">
+                                @php
+                                    echo $TrC->qualifications;
+                                @endphp
+                            </div>
+                            <div class="show_btn position-absolute bottom-0 end-0 w-100 text-end pt-4 rounded-5">
+                                <button class="btn btn-link see_more pb-3">See more...</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
