@@ -12,27 +12,29 @@
 
                 <!-- Right -->
                 <div>
-                    <a class="btn btn-primary btn-floating m-0 mx-1" style="background-color: #3b5998;" href="#!"
-                        role="button"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-primary btn-floating m-0 mx-1" style="background-color: #3b5998;"
+                        href="https://www.facebook.com/mamun20172018/" role="button" target="blank"><i
+                            class="fab fa-facebook-f fa-lg"></i></a>
 
                     <!-- Twitter -->
-                    <a class="btn btn-primary btn-floating m-0 mx-1" style="background-color: #55acee;" href="#!"
-                        role="button"><i class="fab fa-twitter"></i></a>
-
-                    <!-- Google -->
-                    <a class="btn btn-primary btn-floating m-0 mx-1" style="background-color: #dd4b39;" href="#!"
-                        role="button"><i class="fab fa-google"></i></a>
+                    <a class="btn btn-primary btn-floating m-0 mx-1" style="background-color: #55acee;"
+                        href="https://twitter.com/Mamun36009945" role="button" target="blank"><i
+                            class="fab fa-twitter fa-lg"></i></a>
 
                     <!-- Instagram -->
-                    <a class="btn btn-primary btn-floating m-0 mx-1" style="background-color: #ac2bac;" href="#!"
-                        role="button"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-primary btn-floating m-0 mx-1" style="background-color: #ac2bac;"
+                        href="https://www.instagram.com/mr_mamun___/" role="button" target="blank"><i
+                            class="fab fa-instagram fa-lg"></i></a>
 
                     <!-- Linkedin -->
-                    <a class="btn btn-primary btn-floating m-0 mx-1" style="background-color: #0082ca;" href="#!"
-                        role="button"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-primary btn-floating m-0 mx-1" style="background-color: #0082ca;"
+                        href="https://www.linkedin.com/in/m-r-mamun/" role="button" target="blank"><i
+                            class="fab fa-linkedin-in fa-lg"></i></a>
+
                     <!-- Github -->
-                    <a class="btn btn-primary btn-floating m-0 mx-1" style="background-color: #333333;" href="#!"
-                        role="button"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-primary btn-floating m-0 mx-1" style="background-color: #333333;"
+                        href="https://github.com/mr-mamun-50" role="button" target="blank"><i
+                            class="fab fa-github fa-lg"></i></a>
                 </div>
                 <!-- Right -->
             </div>
@@ -46,7 +48,7 @@
             <div class="">
                 <div class="row">
 
-                    <div class="col-md-4 px-lg-4 my-4 my-md-2">
+                    <div class="col-md-4 px-lg-4 my-4 my-md-3">
                         <h6 class="text-uppercase fw-bold mb-4 text-info">
                             <i class="fas fa-address-book me-1"></i> Contact Me
                         </h6>
@@ -79,7 +81,7 @@
                         </form>
                     </div>
 
-                    <div class="col-md-4 px-lg-4 my-4 my-md-2">
+                    <div class="col-md-4 px-lg-4 my-4 my-md-3">
                         <h6 class="text-uppercase fw-bold mb-4 text-info">
                             <i class="fas fa-address-card me-1"></i> My Address
                         </h6>
@@ -100,7 +102,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-4 px-lg-4 my-4 my-md-2">
+                    <div class="col-md-4 px-lg-4 my-4 my-md-3">
                         <h6 class="text-uppercase fw-bold mb-4 text-info">
                             <i class="fas fa-map-marker-alt me-1"></i> I'm Here
                         </h6>

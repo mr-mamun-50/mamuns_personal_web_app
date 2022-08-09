@@ -2,7 +2,7 @@
 
 @section('content')
     {{-- Banner section started --}}
-    <section class="banner">
+    <section class="banner" id="home">
         <div class="container d-md-flex align-items-center h-100">
 
             <div class="intro col-md-6 mt-5">

@@ -6,6 +6,18 @@ body {
 .pt-10 {
     padding-top: 6rem;
 }
+.navbar ul li .active {
+    color: #438af2 !important;
+    font-weight: bold;
+    border-bottom: 3px solid #438af2;
+}
+.nav-link,
+.navbar-toggler {
+    padding: 1.3rem 0.7rem 1rem 0.7rem;
+}
+.profile {
+    padding: 1.2rem 0 0.9rem 0.7rem;
+}
 
 .underline img {
     height: 7px;
