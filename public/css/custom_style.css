@@ -3,6 +3,10 @@ body {
     /* background-size: cover; */
     background-size: 100%;
 }
+.pt-10 {
+    padding-top: 6rem;
+}
+
 .underline img {
     height: 7px;
     /* width: 35px; */
@@ -14,10 +18,22 @@ body {
 
 .banner {
     min-height: 100vh;
-    background: url(../images/asset_img/banner_bg.png) no-repeat;
+    /* background: url(../images/asset_img/banner_bg.png) no-repeat; */
+    background: linear-gradient(
+            to bottom right,
+            rgba(31, 140, 235, 0.9),
+            rgba(255, 162, 0, 0.7),
+            rgba(255, 162, 0, 0)
+        ),
+        url(../images/asset_img/business-concept-glass-world-laptop.jpg);
+    background-size: cover;
     background-position: bottom;
+    background-attachment: fixed;
 }
 
+.banner .intro {
+    text-shadow: 0 0 10px #3f3f3f;
+}
 .banner .intro .heading {
     font-size: 2.5rem;
     font-weight: 900;
@@ -28,9 +44,34 @@ body {
 }
 
 .banner .intro .designation {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 200;
     margin-bottom: 1rem;
+}
+.banner .intro .short-desc {
+    color: #f2f2f2;
+}
+
+.smokeShape {
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+    background: url(../images/asset_img/shape.png);
+    block-size: 100rem 10rem;
+    filter: drop-shadow(0 -0.1rem 0.1rem rgba(0, 0, 0, 0.2));
+    animation: animate 10s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0rem;
+    }
+    100% {
+        background-position-x: 100rem;
+    }
 }
 /* .banner-picture {
     background: url(../images/asset_img/image_frame.png) no-repeat;

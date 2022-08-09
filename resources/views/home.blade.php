@@ -2,16 +2,16 @@
 
 @section('content')
     {{-- Banner section started --}}
-    <div class="banner">
+    <section class="banner">
         <div class="container d-md-flex align-items-center h-100">
 
             <div class="intro col-md-6 mt-5">
                 <h2 class="hi text-warning">Hi_____</h2>
-                <h1 class="heading text-primary">I'm Mamunur Rashid Mamun</h1>
-                <p class="designation">Full-Stack Web Developer</p>
+                <h1 class="heading text-white">I'm Mamunur Rashid Mamun</h1>
+                <p class="designation text-light">Web App Developer || Mobile App Developer</p>
 
-                <p class="short-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit minus optio pariatur
-                    autem ad inventore voluptates quas saepe laborum sint.</p>
+                <p class="short-desc mt-4">I work with perfection and find a simple solution to every difficult task.I always
+                    avoid complexity.I love to do everything simply and smartly.</p>
 
                 <div class="buttuns my-sm-4">
                     <a href="https://github.com/mr-mamun-50" class="btn btn-primary me-2" target="blank"><i
@@ -26,13 +26,13 @@
             </div>
 
         </div>
-    </div>
+        <div class="smokeShape"></div>
+    </section>
     {{-- Banner section ended --}}
 
 
-
     {{-- Services section started --}}
-    <div class="services py-5" id="services">
+    <section class="services pt-10" id="services">
         <div class="container">
             <h2 class="text-primary text-center fw-bold">SERVICES</h2>
             <div class="d-flex justify-content-center underline mb-3">
@@ -56,12 +56,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     {{-- Services section ended --}}
 
 
     {{-- Skills section started --}}
-    <div class="skills py-5" id="skills">
+    <section class="skills pt-10" id="skills">
         <div class="container">
             <h2 class="text-primary text-center fw-bold">SKILLS</h2>
             <div class="d-flex justify-content-center underline mb-3">
@@ -71,12 +71,12 @@
 
             @include('User.skills')
         </div>
-    </div>
+    </section>
     {{-- Skills section ended --}}
 
 
     {{-- Projects section started --}}
-    <div class="projects py-5" id="projects">
+    <section class="projects pt-10" id="projects">
         <div class="container">
             <h2 class="text-primary text-center fw-bold">PROJECTS</h2>
             <div class="d-flex justify-content-center underline mb-3">
@@ -112,12 +112,12 @@
                 <a href="{{ route('more_projects') }}" class="btn btn-link btn-lg">See more projects...</a>
             </div>
         </div>
-    </div>
+    </section>
     {{-- Projects section ended --}}
 
 
     {{-- Videos section started --}}
-    <div class="Videos py-5" id="videos">
+    <section class="Videos pt-10" id="videos">
         <div class="container">
             <h2 class="text-primary text-center fw-bold">YOUTUBE VIDEOS</h2>
             <div class="d-flex justify-content-center underline mb-3">
@@ -149,11 +149,11 @@
                 <a href="{{ route('more_videos') }}" class="btn btn-link btn-lg">See more videos...</a>
             </div>
         </div>
-    </div>
+    </section>
 
 
     {{-- Qualifications section started --}}
-    <div class="qualifications py-5" id="qualifications">
+    <section class="qualifications pt-10" id="qualifications">
         <div class="container">
             <h2 class="text-primary text-center fw-bold">QUALIFICATIONS</h2>
             <div class="d-flex justify-content-center underline mb-3">
@@ -228,5 +228,5 @@
 
             </div>
         </div>
-    </div>
+    </section>
 @endsection

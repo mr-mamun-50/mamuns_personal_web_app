@@ -37,6 +37,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}/#qualifications">Qualifications</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('home') }}/#footer">Contact</a>
+                </li>
             </ul>
             <!-- Left links -->
         </div>
