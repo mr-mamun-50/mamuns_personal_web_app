@@ -65,13 +65,10 @@ body {
 }
 
 .smokeShape {
-    position: absolute;
-    bottom: -0.1rem;
-    left: 0;
     height: 10rem;
     width: 100%;
     background: url(../images/asset_img/shape.png);
-    block-size: 100rem 10rem;
+    block-size: 100rem 15rem;
     filter: drop-shadow(0 -0.1rem 0.1rem rgba(0, 0, 0, 0.2));
     animation: animate 10s linear infinite;
     opacity: 0.5;

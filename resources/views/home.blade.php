@@ -3,7 +3,7 @@
 @section('content')
     {{-- Banner section started --}}
     <section class="banner" id="home">
-        <div class="container d-md-flex align-items-center h-100">
+        <div class="container d-md-flex align-items-center h-100 position-relative">
 
             <div class="intro col-md-6 mt-5">
                 <h2 class="hi text-warning">Hi_____</h2>
@@ -26,7 +26,7 @@
             </div>
 
         </div>
-        <div class="smokeShape"></div>
+        <div class="smokeShape position-absolute bottom-0 left-0"></div>
     </section>
     {{-- Banner section ended --}}
 
