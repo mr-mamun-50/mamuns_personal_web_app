@@ -20,10 +20,10 @@
                 </div>
             </div>
 
-            <div class="banner-picture col-md-6 p-md-5 mt-md-5">
-                <img class="img-fluid" src="{{ asset('public/images/asset_img/header_image_frame-01.png') }}"
-                    alt="">
-            </div>
+            {{-- <div class="banner-picture col-md-6 p-md-5 mt-md-5 bg-info"> --}}
+            <img class="img-fluid banner-picture col-md-6 p-md-5 mt-md-5"
+                src="{{ asset('public/images/asset_img/header_image_frame-01.png') }}" alt="">
+            {{-- </div> --}}
 
         </div>
         <div class="smokeShape position-absolute bottom-0 left-0"></div>

@@ -29,7 +29,7 @@ body {
 }
 
 .banner {
-    min-height: 100vh;
+    height: 100vh;
     /* background: url(../images/asset_img/banner_bg.png) no-repeat; */
     background: linear-gradient(
             to bottom right,
@@ -82,6 +82,7 @@ body {
         background-position-x: 100rem;
     }
 }
+
 /* .banner-picture {
     background: url(../images/asset_img/image_frame.png) no-repeat;
     background-position: center;
@@ -226,7 +227,7 @@ body {
         font-size: 1.3rem;
     }
     .banner-picture {
-        margin-top: 3rem;
+        padding-top: 3rem;
     }
     .skill-title {
         font-size: 16px;
