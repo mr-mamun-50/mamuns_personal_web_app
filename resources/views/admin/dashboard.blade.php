@@ -6,7 +6,10 @@
 $submenu = ''; ?>
 
 @php
-
+$skills = DB::table('skills')->get();
+$projects = DB::table('projects')->get();
+$videos = DB::table('videos')->get();
+$messages = DB::table('messages')->get();
 @endphp
 
 @section('content')
@@ -17,40 +20,47 @@ $submenu = ''; ?>
             <div class="col-md-6 col-xl-3">
                 <div class="card bg-c-blue order-card">
                     <div class="card-block">
-                        <h6 class="m-b-20">Softwares</h6>
-                        <h2 class="text-right"><i class="bi bi-microsoft f-left"></i><span>0</span>
+                        <h6 class="m-b-20">Skills</h6>
+                        <h2 class="text-right"><i
+                                class="fas fa-lightbulb f-left"></i><span>{{ $skills->where('visibility', 1)->count() }}</span>
                         </h2>
-                        <p class="m-b-0">Private<span class="f-right">0</span></p>
+                        <p class="m-b-0">Private<span class="f-right">{{ $skills->where('visibility', 0)->count() }}</span>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-xl-3">
                 <div class="card bg-c-green order-card">
                     <div class="card-block">
-                        <h6 class="m-b-20">Designs</h6>
-                        <h2 class="text-right"><i class="fas fa-bezier-curve f-left"></i><span>0</span>
+                        <h6 class="m-b-20">Projects</h6>
+                        <h2 class="text-right"><i
+                                class="fas fa-splotch f-left"></i><span>{{ $projects->where('visibility', 1)->count() }}</span>
                         </h2>
-                        <p class="m-b-0">Private<span class="f-right">0</span></p>
+                        <p class="m-b-0">Private<span
+                                class="f-right">{{ $projects->where('visibility', 0)->count() }}</span></p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-xl-3">
                 <div class="card bg-c-yellow order-card">
                     <div class="card-block">
-                        <h6 class="m-b-20">Articles</h6>
-                        <h2 class="text-right"><i class="bi bi-newspaper f-left"></i><span>0</span>
+                        <h6 class="m-b-20">Videos</h6>
+                        <h2 class="text-right"><i
+                                class="fas fa-video f-left"></i><span>{{ $videos->where('visibility', 1)->count() }}</span>
                         </h2>
-                        <p class="m-b-0">Private<span class="f-right">0</span></p>
+                        <p class="m-b-0">Private<span class="f-right">{{ $videos->where('visibility', 0)->count() }}</span>
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-xl-3">
                 <div class="card bg-c-pink order-card">
                     <div class="card-block">
-                        <h6 class="m-b-20">Video Tutorials</h6>
-                        <h2 class="text-right"><i class="fas fa-chalkboard-teacher f-left"></i><span>0</span>
+                        <h6 class="m-b-20">Messages</h6>
+                        <h2 class="text-right"><i
+                                class="fas fa-comment-dots f-left"></i><span>{{ $messages->count() }}</span>
                         </h2>
-                        <p class="m-b-0">Private<span class="f-right">0</span></p>
+                        <p class="m-b-0"><span class="text-danger">.</span></p>
                     </div>
                 </div>
             </div>
