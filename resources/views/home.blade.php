@@ -10,13 +10,20 @@
                 <h1 class="heading text-white">I'm Mamunur Rashid Mamun</h1>
                 <p class="designation text-light">Web App Developer || Mobile App Developer</p>
 
-                <p class="short-desc mt-4">I work with perfection and find a simple solution to every difficult task.I always
-                    avoid complexity.I love to do everything simply and smartly.</p>
+                <p class="short-desc mt-4"><i class="fas fa-quote-left"></i><br> I work with perfection and find a simple
+                    solution
+                    to every difficult task.I always
+                    avoid complexity.I love to do everything simply and smartly.
+                    <br><i class="fas fa-quote-right"></i>
+                </p>
 
                 <div class="buttuns my-sm-4">
-                    <a href="https://github.com/mr-mamun-50" class="btn btn-primary me-2" target="blank"><i
-                            class="fa-brands fa-github fa-xl me-1"></i> Github</a>
-                    <a href="#" class="btn btn-info"><i class="fa-solid fa-user-graduate  fa-xl me-1"></i> Get CV</a>
+                    {{-- <a href="https://github.com/mr-mamun-50" class="btn btn-primary me-2" target="blank"><i
+                            class="fa-brands fa-github fa-xl me-1"></i> Github</a> --}}
+                    <button class="btn btn-light btn-lg me-2" type="button"><i class="fas fa-user-check  fa-xl me-1"></i>
+                        Hire Me</button>
+                    <a href="#" class="btn btn-outline-light btn-lg"><i
+                            class="fa-solid fa-user-graduate  fa-xl me-1"></i> Get CV</a>
                 </div>
             </div>
 

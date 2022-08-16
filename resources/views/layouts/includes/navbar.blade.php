@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-0">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top py-0">
     <!-- Container wrapper -->
     <div class="container">
 

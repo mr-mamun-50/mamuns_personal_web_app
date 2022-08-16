@@ -6,10 +6,13 @@ body {
 .pt-10 {
     padding-top: 6rem;
 }
+.navbar ul li a {
+    color: #f2f2f2 !important;
+}
 .navbar ul li .active {
-    color: #438af2 !important;
-    /* font-weight: bold; */
-    border-bottom: 3px solid #438af2;
+    color: #39c0ed !important;
+    font-weight: bold;
+    border-bottom: 3px solid #39c0ed;
 }
 .nav-link,
 .navbar-toggler {
@@ -32,9 +35,9 @@ body {
     height: 100vh;
     background: linear-gradient(
             to bottom right,
-            rgba(31, 140, 235, 0.9),
-            rgba(255, 162, 0, 0.7),
-            rgba(255, 162, 0, 0)
+            rgba(67, 137, 242, 0.85) 30%,
+            rgba(255, 170, 0, 0.8) 60%,
+            rgba(255, 162, 0, 0) 100%
         ),
         url(../images/asset_img/business-concept-glass-world-laptop.jpg);
     background-size: cover;
@@ -61,6 +64,7 @@ body {
 }
 .banner .intro .short-desc {
     color: #f2f2f2;
+    font-weight: 200;
 }
 
 .smokeShape {
@@ -226,7 +230,7 @@ body {
         font-size: 1.3rem;
     }
     .banner-picture {
-        padding-top: 3rem;
+        padding: 3rem 10% 0 10%;
     }
     .skill-title {
         font-size: 16px;
