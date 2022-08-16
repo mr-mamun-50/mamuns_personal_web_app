@@ -3,13 +3,12 @@
     <div class="col-lg-6">
         <div class="card card-body mt-3">
 
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#web_dev"
+                role="button" aria-expanded="false" aria-controls="web_dev">
+
                 <span class="skill-title"><i class="fa-solid fa-globe fa-lg me-1 text-primary"></i> Full-Stack
                     Web Development</span>
-                <a class="btn btn-outline-primary btn-floating" data-bs-toggle="collapse" href="#web_dev" role="button"
-                    aria-expanded="false" aria-controls="web_dev">
-                    <i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
-                </a>
+                <a class="btn btn-outline-primary btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i></a>
             </div>
 
             <div class="collapse mt-3 row" id="web_dev">
@@ -72,13 +71,12 @@
     <div class="col-lg-6">
         <div class="card card-body mt-3">
 
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#mobile_dev"
+                role="button" aria-expanded="false" aria-controls="mobile_dev">
+
                 <span class="skill-title"><i class="fas fa-mobile-alt fa-lg me-2 text-secondary"></i> Mobile App
                     Development</span>
-                <a class="btn btn-outline-primary btn-floating" data-bs-toggle="collapse" href="#mobile_dev"
-                    role="button" aria-expanded="false" aria-controls="mobile_dev">
-                    <i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
-                </a>
+                <a class="btn btn-outline-primary btn-floating"> <i class="fa-solid fa-angle-down fa-2xl mt-3"></i></a>
             </div>
 
             <div class="collapse mt-3 row" id="mobile_dev">
@@ -141,13 +139,13 @@
     <div class="col-lg-6">
         <div class="card card-body mt-3">
 
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                href="#programming_languages" role="button" aria-expanded="false"
+                aria-controls="programming_languages">
+
                 <span class="skill-title"><i class="fas fa-brain fa-lg me-1 text-info"></i> Programming
                     Languages</span>
-                <a class="btn btn-outline-primary btn-floating" data-bs-toggle="collapse" href="#programming_languages"
-                    role="button" aria-expanded="false" aria-controls="programming_languages">
-                    <i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
-                </a>
+                <a class="btn btn-outline-primary btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i></a>
             </div>
 
             <div class="collapse mt-3 row" id="programming_languages">
@@ -174,12 +172,12 @@
     <div class="col-lg-6">
         <div class="card card-body mt-3">
 
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                href="#graphic_design" role="button" aria-expanded="false" aria-controls="graphic_design">
+
                 <span class="skill-title"><i class="fas fa-crop fa-lg me-1 text-warning"></i>
                     Graphic Design</span>
-                <a class="btn btn-outline-primary btn-floating" data-bs-toggle="collapse" href="#graphic_design"
-                    role="button" aria-expanded="false" aria-controls="graphic_design">
-                    <i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
+                <a class="btn btn-outline-primary btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
                 </a>
             </div>
 
@@ -208,12 +206,12 @@
     <div class="col-lg-6">
         <div class="card card-body mt-3">
 
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                href="#office_softwares" role="button" aria-expanded="false" aria-controls="office_softwares">
+
                 <span class="skill-title"><i class="fas fa-file-alt fa-lg me-1 text-success"></i> Office
                     Softwares</span>
-                <a class="btn btn-outline-primary btn-floating" data-bs-toggle="collapse" href="#office_softwares"
-                    role="button" aria-expanded="false" aria-controls="office_softwares">
-                    <i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
+                <a class="btn btn-outline-primary btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
                 </a>
             </div>
 
@@ -242,12 +240,12 @@
     <div class="col-lg-6">
         <div class="card card-body mt-3">
 
-            <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                href="#other_skills" role="button" aria-expanded="false" aria-controls="other_skills">
+
                 <span class="skill-title"><i class="fas fa-fire fa-lg me-1 text-danger"></i> Other
                     Skills</span>
-                <a class="btn btn-outline-primary btn-floating" data-bs-toggle="collapse" href="#other_skills"
-                    role="button" aria-expanded="false" aria-controls="other_skills">
-                    <i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
+                <a class="btn btn-outline-primary btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
                 </a>
             </div>
 

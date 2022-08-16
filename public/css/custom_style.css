@@ -32,7 +32,7 @@ body {
 }
 
 .banner {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(
             to bottom right,
             rgba(67, 137, 242, 0.85) 30%,
@@ -71,7 +71,7 @@ body {
     height: 10rem;
     width: 100%;
     background: url(../images/asset_img/shape.png);
-    /* block-size: 100rem 15rem; */
+    block-size: 100rem 10rem;
     filter: drop-shadow(0 -0.1rem 0.1rem rgba(0, 0, 0, 0.2));
     animation: animate 10s linear infinite;
     opacity: 0.5;
@@ -217,6 +217,10 @@ body {
     );
 }
 
+.hire-me-bg {
+    background: linear-gradient(to bottom right, #d9e7fc, #fff6e5);
+}
+
 @media screen and (max-width: 768px) {
     .banner {
         padding-top: 25%;
@@ -230,7 +234,7 @@ body {
         font-size: 1.3rem;
     }
     .banner-picture {
-        padding: 3rem 10% 0 10%;
+        padding: 3rem 5% 1rem 5%;
     }
     .skill-title {
         font-size: 16px;

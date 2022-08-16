@@ -44,10 +44,18 @@
         <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">User</div>
         <ul class="pcoded-item pcoded-left-item">
 
+            <li class="@if ($menu == 'hiring_msgs') active @endif">
+                <a href="{{ route('hire-me.index') }}">
+                    <span class="pcoded-micon"><i class="fas fa-user-check"></i></span>
+                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Hiring Requests</span>
+                    <span class="pcoded-mcaret"></span>
+                </a>
+            </li>
+
             <li class="@if ($menu == 'messages') active @endif">
                 <a href="{{ route('messages.index') }}">
                     <span class="pcoded-micon"><i class="fas fa-comment-dots"></i></span>
-                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Messages</span>
+                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Contact Messages</span>
                     <span class="pcoded-mcaret"></span>
                 </a>
             </li>

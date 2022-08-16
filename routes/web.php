@@ -12,6 +12,7 @@ use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\VideoController;
 use App\Http\Controllers\Admin\QualificationsController;
+use App\Http\Controllers\Admin\HireMeController;
 
 
 /*
@@ -28,6 +29,8 @@ use App\Http\Controllers\Admin\QualificationsController;
 Route::get('/', [UserController::class, 'home'])->name('home');
 Route::get('/more_projects', [UserController::class, 'all_projects'])->name('more_projects');
 Route::get('/more_videos', [UserController::class, 'all_videos'])->name('more_videos');
+
+Route::post('/hire_me/submit', [HireMeController::class, 'store'])->name('hire_me.submit');
 
 Route::post('/message/send', [UserController::class, 'message_store'])->name('message.send');
 
@@ -71,5 +74,8 @@ Route::group(['middleware' => 'admin'], function() {
 
     //__Qualifications route
     Route::resource('/admin/qualifications', QualificationsController::class);
+
+    //__Hire me route
+    Route::resource('/admin/hire-me', HireMeController::class);
 
 });

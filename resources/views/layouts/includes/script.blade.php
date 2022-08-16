@@ -42,6 +42,18 @@
     })
 </script>
 
+<!-- include summernote js -->
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+<!-- Summernote script -->
+<script>
+    $('.summernote').summernote({
+        placeholder: 'Please describe your requirements <?php echo '<span class="text-danger">*</span>'; ?>',
+        tabsize: 4,
+        height: 200
+    });
+</script>
+
 <!-- Sweetalert js -->
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -85,21 +97,12 @@
 <script>
     $(window).on('load scroll', function() {
 
-        // $('#menu').removeClass('fa-times');
-
-        // $('.navbar').removeClass('nav-toggle');
-
-        // $('.login-form').removeClass('popup');
-
-
         $('section').each(function() {
 
             let top = $(window).scrollTop();
             let height = $(this).height();
             let id = $(this).attr('id');
             let offset = $(this).offset().top - 200;
-
-            // console.log(offset);
 
             if (top > offset && top < offset + height) {
                 $('.navbar ul li a').removeClass('active');

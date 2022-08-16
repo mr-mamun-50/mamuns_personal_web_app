@@ -6,7 +6,7 @@
         <div class="container d-md-flex align-items-center h-100 position-relative">
 
             <div class="intro col-md-6 mt-5">
-                <h2 class="hi text-warning">Hi_____</h2>
+                <h2 class="hi text-warning">Hi,,,</h2>
                 <h1 class="heading text-white">I'm Mamunur Rashid Mamun</h1>
                 <p class="designation text-light">Web App Developer || Mobile App Developer</p>
 
@@ -20,8 +20,9 @@
                 <div class="buttuns my-sm-4">
                     {{-- <a href="https://github.com/mr-mamun-50" class="btn btn-primary me-2" target="blank"><i
                             class="fa-brands fa-github fa-xl me-1"></i> Github</a> --}}
-                    <button class="btn btn-light btn-lg me-2" type="button"><i class="fas fa-user-check  fa-xl me-1"></i>
-                        Hire Me</button>
+                    <button class="btn btn-light btn-lg me-2" type="button" data-bs-toggle="modal"
+                        data-bs-target="#hireMe"><i class="fas fa-user-check  fa-xl me-1"></i> Hire Me</button>
+
                     <a href="#" class="btn btn-outline-light btn-lg"><i
                             class="fa-solid fa-user-graduate  fa-xl me-1"></i> Get CV</a>
                 </div>
@@ -31,9 +32,9 @@
             <img class="img-fluid banner-picture col-md-6 p-md-5 mt-md-5"
                 src="{{ asset('public/images/asset_img/header_image_frame-01.png') }}" alt="">
             {{-- </div> --}}
-
         </div>
-        <div class="smokeShape position-absolute bottom-0 left-0"></div>
+
+        {{-- <div class="smokeShape position-absolute bottom-0 left-0"></div> --}}
     </section>
     {{-- Banner section ended --}}
 
@@ -47,7 +48,6 @@
                 <img src="{{ asset('public/images/asset_img/underline.gif') }}" alt="">
             </div>
 
-            <!-- Set up your HTML -->
             <div class="owl-carousel">
                 <div class="px-5">
                     <img class="img-fluid" src="{{ asset('public/images/asset_img/w-a-d.png') }}" alt="">
@@ -236,4 +236,109 @@
             </div>
         </div>
     </section>
+
+
+    {{-- Hire me section started --}}
+    <section class="container pt-10 d-flex justify-content-center">
+        <div class="col-md-10 col-lg-8 rounded-7 bg-white">
+
+            <div class="card rounded-7 hire-me-bg">
+                <div class="card-body d-md-flex align-items-center py-5 px-md-5">
+
+                    <div class=" col-md-8 col-lg-9">
+                        <h2 class="card-title text-primary mb-3">Hire Me!</h2>
+                        <p class="card-text">If you think my skills and activities are suitable for your project then click
+                            on 'HIRE ME' button to hire me...</p>
+                    </div>
+
+                    <div class="text-end col-md-4 col-lg-3 mt-3">
+                        <button class="btn btn-primary btn-rounded btn-lg" type="button" data-bs-toggle="modal"
+                            data-bs-target="#hireMe"><i class="fas fa-user-check me-1"></i> HIRE ME</button>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+
+    <!-- Modal for hire me -->
+    <div class="modal fade" id="hireMe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header hire-me-bg">
+                    <h5 class="modal-title" id="staticBackdropLabel">Hire Me</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="{{ route('hire_me.submit') }}" method="POST">
+                    @csrf
+                    <div class="modal-body">
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="text" name="name" id="form4Example1" class="form-control"
+                                        required />
+                                    <label class="form-label" for="form4Example1">Name <span
+                                            class="text-danger">*</span></label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="email" name="email" id="form4Example2" class="form-control"
+                                        required />
+                                    <label class="form-label" for="form4Example2">Email address
+                                        <span class="text-danger">*</span></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="form-outline mb-4">
+                                    <input type="link" name="website" id="form4Example2" class="form-control" />
+                                    <label class="form-label" for="form4Example2">Website</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="input-group mb-4">
+                                    <span class="input-group-text text-muted" id="basic-addon1">Budget
+                                        <span class="text-danger ms-1">*</span></span>
+                                    <select class="form-control" name="budget" id="" required>
+                                        <option disabled selected> Select one</option>
+                                        <option value="$100 - $300"> $100 - $300</option>
+                                        <option value="$300 - $500"> $300 - $500</option>
+                                        <option value="$500 - $1000"> $500 - $1000</option>
+                                        <option value="$1000+"> $1000+</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <textarea name="requirements" class="summernote" required></textarea>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="form-check">
+                            <input class="form-check-input me-2" name="sent_copy" type="checkbox" value="1"
+                                id="form4Example4" checked />
+                            <label class="form-check-label" for="form4Example4">
+                                Send me a copy of this message
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light shadow-0" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 @endsection
