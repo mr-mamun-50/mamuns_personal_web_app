@@ -106,7 +106,7 @@
 
             if (top > offset && top < offset + height) {
                 $('.navbar ul li a').removeClass('active');
-                $('.navbar').find(`[href="#${id}"]`).addClass('active');
+                $('.navbar').find(`[href="{{ route('home') }}/#${id}"]`).addClass('active');
             }
         });
 

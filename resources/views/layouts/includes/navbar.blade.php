@@ -20,25 +20,25 @@
             <!-- Left links -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#home">Home</a>
+                    <a class="nav-link active" href="{{ route('home') }}/#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="{{ route('home') }}/#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="{{ route('home') }}/#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="{{ route('home') }}/#projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#videos">Videos</a>
+                    <a class="nav-link" href="{{ route('home') }}/#videos">Videos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#qualifications">Qualifications</a>
+                    <a class="nav-link" href="{{ route('home') }}/#qualifications">Qualifications</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#footer">Contact</a>
+                    <a class="nav-link" href="{{ route('home') }}/#footer">Contact</a>
                 </li>
             </ul>
             <!-- Left links -->
