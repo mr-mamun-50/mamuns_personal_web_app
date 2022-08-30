@@ -1,5 +1,5 @@
 Hi, {{ $name }}
-<h3>You sent a hiring message to {{ config('app.name') }}</h3>
+<h3>You sent a hiring message to Mamunur Rashid Mamun</h3>
 
 <table>
     <tbody>
