@@ -22,7 +22,7 @@
         loop: true,
         autoplay: true,
         autoplayTimeout: 4000, //5000ms = 5s
-        autoplayHoverPause: true,
+        autoplayHoverPause: false,
         autoplaySpeed: 1000,
         smartSpeed: 500,
         responsive: {
