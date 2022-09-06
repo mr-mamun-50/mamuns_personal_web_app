@@ -66,11 +66,11 @@ html::-webkit-scrollbar-thumb {
     min-height: 100vh;
     background: linear-gradient(
             to bottom right,
-            rgba(67, 137, 242, 0.85) 30%,
+            /* rgba(67, 137, 242, 0.85) 30%, */ rgba(31, 66, 117, 0.85) 30%,
             rgba(255, 170, 0, 0.8) 60%,
             rgba(255, 162, 0, 0) 100%
         ),
-        url(../images/asset_img/business-concept-glass-world-laptop.jpg);
+        url(../images/asset_img/abstract-futuristic-background-with-3d-design.jpg);
     background-size: cover;
     background-position: bottom;
     /* background-attachment: fixed; */
