@@ -30,11 +30,11 @@
 
             {{-- <div class="banner-picture col-md-6 p-md-5 mt-md-5 bg-info"> --}}
             <img class="img-fluid banner-picture col-md-6 p-md-5 mt-md-5"
-                src="{{ asset('public/images/asset_img/header_image_frame-01.png') }}" alt="">
+                src="{{ asset('public/images/asset_img/macbook.svg') }}" alt="">
             {{-- </div> --}}
         </div>
 
-        {{-- <div class="smokeShape position-absolute bottom-0 left-0 d-none d-lg-block"></div> --}}
+        <div class="smokeShape position-absolute bottom-0 left-0 d-none d-lg-block"></div>
     </section>
     {{-- Banner section ended --}}
 
@@ -240,13 +240,13 @@
 
     {{-- Hire me section started --}}
     <section class="container pt-10 d-flex justify-content-center">
-        <div class="col-md-10 col-lg-8 rounded-7 bg-white">
+        <div class="col-md-10 col-lg-8 rounded-9 bg-white">
 
-            <div class="card rounded-7 hire-me-bg">
+            <div class="card rounded-9 hire-me-bg">
                 <div class="card-body d-md-flex align-items-center py-5 px-md-5">
 
                     <div class=" col-md-8 col-lg-9">
-                        <h2 class="card-title text-light mb-3">Hire Me!</h2>
+                        <h2 class="card-title text-warning mb-3">Hire Me!</h2>
                         <p class="card-text text-white">If you think my skills and activities are suitable for your project
                             then click
                             on 'HIRE ME' button to hire me...</p>
@@ -267,7 +267,7 @@
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-header hire-me-bg">
+                <div class="modal-header">
                     <h5 class="modal-title" id="staticBackdropLabel">Hire Me</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>

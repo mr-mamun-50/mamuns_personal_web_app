@@ -1,8 +1,13 @@
+@font-face {
+    font-family: "google-sans";
+    src: url(../Google-sans-Font-Family/ProductSans-Regular.ttf);
+}
+
 body {
     /* background: url(../images/asset_img/body-bg-dark-01.svg); */
-    /* background-size: cover; */
     background: #0e1629;
     background-size: 100%;
+    font-family: "google-sans", sans-serif;
 }
 
 *::selection {
@@ -100,10 +105,15 @@ html::-webkit-scrollbar-thumb {
     font-weight: 200;
 }
 
+.banner .intro .heading:hover,
+.banner .intro .designation:hover {
+    color: #39c0ed !important;
+}
+
 .smokeShape {
-    height: 10rem;
+    height: 9rem;
     width: 100%;
-    background: url(../images/asset_img/shape.png);
+    background: url(../images/asset_img/smoke.png);
     block-size: 100rem 10rem;
     filter: drop-shadow(0 -0.1rem 0.1rem rgba(0, 0, 0, 0.2));
     animation: animate 10s linear infinite;
@@ -174,10 +184,11 @@ html::-webkit-scrollbar-thumb {
     background: linear-gradient(
             to right,
             rgba(255, 162, 0, 0),
-            rgba(31, 140, 235, 0.95),
-            rgba(255, 162, 0, 0.7)
+            rgba(14, 22, 41, 0.9),
+            rgba(255, 162, 0, 0.5)
         ),
-        url(../images/asset_img/Vector_60.jpg) no-repeat;
+        url(../images/asset_img/abstract-futuristic-background-with-3d-design.jpg)
+            no-repeat;
     background-size: cover;
     background-position-y: center;
     min-height: 240px;
@@ -273,8 +284,8 @@ html::-webkit-scrollbar-thumb {
 
 .hire-me-bg {
     background: linear-gradient(
-        to bottom left,
-        rgba(57, 125, 192, 0.99),
+        to bottom right,
+        rgba(57, 125, 192, 0.99) 40%,
         rgba(255, 162, 0, 0.99)
     );
 }
@@ -283,10 +294,12 @@ html::-webkit-scrollbar-thumb {
     .banner {
         padding-top: 20% !important;
         background-position: right;
+        text-align: center;
     }
     .banner .intro .heading,
     .banner .intro .hi {
         font-size: 2rem;
+        /* text-align: center; */
     }
     .banner .intro .designation {
         font-size: 1.3rem;

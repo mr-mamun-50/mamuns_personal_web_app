@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="page-header d-flex justify-content-center align-items-center">
-        <h2 class="pt-5 text-white fw-bold">MAMUN'S YOUTUBE VIDEOS</h2>
+        <h2 class="pt-5 mt-4 text-white fw-bold">MAMUN'S YOUTUBE VIDEOS</h2>
     </div>
 
     {{-- videos section started --}}
