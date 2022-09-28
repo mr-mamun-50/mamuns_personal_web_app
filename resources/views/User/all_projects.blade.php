@@ -18,7 +18,7 @@
 
                             <div class="card-header">
                                 <h5 class="card-title">{{ $project->title }}</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">{{ $project->subtitle }}</h6>
+                                <h6 class="mb-2">{{ $project->subtitle }}</h6>
                             </div>
                             <div class="card-body">
                                 <p class="card-text">{{ $project->description }}</p>

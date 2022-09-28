@@ -8,7 +8,7 @@
 
                 <span class="skill-title"><i class="fa-solid fa-globe fa-lg me-1 text-primary"></i> Full-Stack
                     Web Development</span>
-                <a class="btn btn-outline-primary btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i></a>
+                <a class="btn btn-outline-info btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i></a>
             </div>
 
             <div class="collapse mt-3 row" id="web_dev">
@@ -76,7 +76,7 @@
 
                 <span class="skill-title"><i class="fas fa-mobile-alt fa-lg me-2 text-secondary"></i> Mobile App
                     Development</span>
-                <a class="btn btn-outline-primary btn-floating"> <i class="fa-solid fa-angle-down fa-2xl mt-3"></i></a>
+                <a class="btn btn-outline-info btn-floating"> <i class="fa-solid fa-angle-down fa-2xl mt-3"></i></a>
             </div>
 
             <div class="collapse mt-3 row" id="mobile_dev">
@@ -145,7 +145,7 @@
 
                 <span class="skill-title"><i class="fas fa-brain fa-lg me-1 text-info"></i> Programming
                     Languages</span>
-                <a class="btn btn-outline-primary btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i></a>
+                <a class="btn btn-outline-info btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i></a>
             </div>
 
             <div class="collapse mt-3 row" id="programming_languages">
@@ -177,7 +177,7 @@
 
                 <span class="skill-title"><i class="fas fa-crop fa-lg me-1 text-warning"></i>
                     Graphic Design</span>
-                <a class="btn btn-outline-primary btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
+                <a class="btn btn-outline-info btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
                 </a>
             </div>
 
@@ -211,7 +211,7 @@
 
                 <span class="skill-title"><i class="fas fa-file-alt fa-lg me-1 text-success"></i> Office
                     Softwares</span>
-                <a class="btn btn-outline-primary btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
+                <a class="btn btn-outline-info btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
                 </a>
             </div>
 
@@ -245,7 +245,7 @@
 
                 <span class="skill-title"><i class="fas fa-fire fa-lg me-1 text-danger"></i> Other
                     Skills</span>
-                <a class="btn btn-outline-primary btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
+                <a class="btn btn-outline-info btn-floating"><i class="fa-solid fa-angle-down fa-2xl mt-3"></i>
                 </a>
             </div>
 

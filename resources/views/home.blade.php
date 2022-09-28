@@ -34,7 +34,7 @@
             {{-- </div> --}}
         </div>
 
-        <div class="smokeShape position-absolute bottom-0 left-0 d-none d-md-block"></div>
+        {{-- <div class="smokeShape position-absolute bottom-0 left-0 d-none d-lg-block"></div> --}}
     </section>
     {{-- Banner section ended --}}
 
@@ -101,7 +101,7 @@
 
                             <div class="card-header">
                                 <h5 class="card-title">{{ $project->title }}</h5>
-                                <h6 class="card-subtitle mb-2 text-muted ">{{ $project->subtitle }}</h6>
+                                <h6 class="mb-2">{{ $project->subtitle }}</h6>
                             </div>
                             <div class="card-body">
                                 <p class="card-text">{{ $project->description }}</p>
@@ -246,8 +246,9 @@
                 <div class="card-body d-md-flex align-items-center py-5 px-md-5">
 
                     <div class=" col-md-8 col-lg-9">
-                        <h2 class="card-title text-primary mb-3">Hire Me!</h2>
-                        <p class="card-text">If you think my skills and activities are suitable for your project then click
+                        <h2 class="card-title text-light mb-3">Hire Me!</h2>
+                        <p class="card-text text-white">If you think my skills and activities are suitable for your project
+                            then click
                             on 'HIRE ME' button to hire me...</p>
                     </div>
 

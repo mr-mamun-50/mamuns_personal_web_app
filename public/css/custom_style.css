@@ -1,6 +1,7 @@
 body {
-    background: url(../images/asset_img/body-bg.svg);
+    /* background: url(../images/asset_img/body-bg-dark-01.svg); */
     /* background-size: cover; */
+    background: #0e1629;
     background-size: 100%;
 }
 
@@ -16,7 +17,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-    width: 0.6rem;
+    width: 0.5rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -64,13 +65,14 @@ html::-webkit-scrollbar-thumb {
 
 .banner {
     min-height: 100vh;
-    background: linear-gradient(
+    /* background: linear-gradient(
             to bottom right,
-            /* rgba(67, 137, 242, 0.85) 30%, */ rgba(31, 66, 117, 0.85) 30%,
+            rgba(31, 66, 117, 0.85) 30%,
             rgba(255, 170, 0, 0.8) 60%,
             rgba(255, 162, 0, 0) 100%
         ),
-        url(../images/asset_img/abstract-futuristic-background-with-3d-design.jpg);
+        url(../images/asset_img/abstract-futuristic-background-with-3d-design.jpg); */
+    background: url(../images/asset_img/header.png);
     background-size: cover;
     background-position: bottom;
     /* background-attachment: fixed; */
@@ -117,20 +119,39 @@ html::-webkit-scrollbar-thumb {
     }
 }
 
-/* .banner-picture {
-    background: url(../images/asset_img/image_frame.png) no-repeat;
-    background-position: center;
-    background-size: 450px 450px;
-    text-align: center;
-    min-height: 450px;
+.text-primary,
+.btn-link {
+    color: #38bdf8 !important;
 }
-.banner-picture img {
-    margin: 80px 50px;
-    width: 300px;
+.btn-link:hover {
+    background: #262626;
+}
+/* .btn-primary {
+    background: #38bdf8;
 } */
+
+.card {
+    background: #182233;
+}
+.card .card {
+    background: #0e1629;
+}
+.card span,
+.card h5 {
+    color: #fff;
+}
+.card p,
+.card h6 {
+    color: #94a3b8;
+}
+.card-header,
+.card-footer {
+    border-color: rgba(248, 250, 252, 0.08);
+}
 
 .skill-title {
     font-size: 20px;
+    color: #fff;
 }
 .skill-name {
     font-size: 20px;
@@ -191,7 +212,8 @@ html::-webkit-scrollbar-thumb {
 .owl-dot:hover,
 .owl-dot.active {
     background: #35b9e7 !important;
-    width: 25px;
+    width: 15px;
+    height: 15px;
 }
 
 .owl-carousel {
@@ -226,6 +248,7 @@ html::-webkit-scrollbar-thumb {
 .qualifications li {
     border-bottom: 1px solid #b5b5b5;
     padding: 7px 0;
+    color: #94a3b8;
 }
 .qualifications li:last-child {
     border-bottom: none;
@@ -243,13 +266,17 @@ html::-webkit-scrollbar-thumb {
     background: linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.9) 50%,
-        rgba(255, 255, 255, 0.9) 100%
+        rgba(24, 34, 51, 0.9) 50%,
+        rgba(24, 34, 51, 0.9)
     );
 }
 
 .hire-me-bg {
-    background: linear-gradient(to bottom right, #d9e7fc, #fff6e5);
+    background: linear-gradient(
+        to bottom left,
+        rgba(57, 125, 192, 0.99),
+        rgba(255, 162, 0, 0.99)
+    );
 }
 
 @media screen and (max-width: 768px) {
