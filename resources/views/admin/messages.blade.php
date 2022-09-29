@@ -32,7 +32,7 @@ $submenu = ''; ?>
                                 </div>
                             </td>
                             <td>{{ $message->email }}</td>
-                            <td>{{ $message->message }}</td>
+                            <td><?php echo $message->message; ?></td>
                             <td>
                                 <div class="d-flex justify-content-center">
 

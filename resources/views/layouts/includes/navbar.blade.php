@@ -37,8 +37,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}/#qualifications">Qualifications</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}/#footer">Contact</a>
+                <li class="nav-item d-flex align-items-center ms-lg-3">
+                    <div class="">
+                        <a class="nav-link btn btn-outline-light gr-btn py-2 px-3" data-bs-toggle="modal"
+                            data-bs-target="#ContactMe">Contact</a>
+                    </div>
                 </li>
             </ul>
             <!-- Left links -->
@@ -68,3 +71,45 @@
     <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
+
+
+<!-- Modal for Contact me -->
+<div class="modal fade" id="ContactMe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title" id="staticBackdropLabel">Contact Me</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="{{ route('message.send') }}" method="POST">
+                @csrf
+                <div class="modal-body">
+
+                    <!-- Name input -->
+                    <div class="form-outline mb-4">
+                        <input type="text" name="name" id="form4Example1" class="form-control" required />
+                        <label class="form-label" for="form4Example1">Name <span class="text-danger">*</span></label>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" name="email" id="form4Example2" class="form-control" required />
+                        <label class="form-label" for="form4Example2">Email address
+                            <span class="text-danger">*</span></label>
+                    </div>
+
+                    <div class="mb-4">
+                        <textarea name="message" class="summernote_contact" required></textarea>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light shadow-0" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

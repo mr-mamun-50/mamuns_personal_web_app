@@ -28,10 +28,7 @@
                 </div>
             </div>
 
-            {{-- <div class="banner-picture col-md-6 p-md-5 mt-md-5 bg-info"> --}}
-            <img class="img-fluid banner-picture col-md-6 py-m-5 mt-md-5"
-                src="{{ asset('public/images/asset_img/macbook.png') }}" alt="">
-            {{-- </div> --}}
+            @include('User.banner_carousel')
         </div>
 
         <div class="smokeShape position-absolute bottom-0 left-0 d-none d-lg-block"></div>
@@ -108,7 +105,8 @@
                             </div>
                             <div class="card-footer pb-3 text-end">
                                 <a href="{{ $project->github_link }}" class="btn btn-dark me-1" target="blank">Github</a>
-                                <a href="{{ $project->live_link }}" class="btn btn-primary" target="blank">Live Project</a>
+                                <a href="{{ $project->live_link }}" class="btn btn-primary" target="blank">Live
+                                    Project</a>
                             </div>
                         </div>
                     </div>
@@ -268,7 +266,7 @@
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header bg-light">
                     <h5 class="modal-title" id="staticBackdropLabel">Hire Me</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>

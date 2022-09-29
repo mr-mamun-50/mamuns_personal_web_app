@@ -42,6 +42,9 @@
     })
 </script>
 
+<!-- Typer JS -->
+<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+
 <!-- include summernote js -->
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 
@@ -49,6 +52,13 @@
 <script>
     $('.summernote').summernote({
         placeholder: 'Please describe your requirements <?php echo '<span class="text-danger">*</span>'; ?>',
+        tabsize: 4,
+        height: 200
+    });
+</script>
+<script>
+    $('.summernote_contact').summernote({
+        placeholder: 'Your message <?php echo '<span class="text-danger">*</span>'; ?>',
         tabsize: 4,
         height: 200
     });

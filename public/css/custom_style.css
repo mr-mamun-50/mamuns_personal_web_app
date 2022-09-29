@@ -107,8 +107,8 @@ html::-webkit-scrollbar-thumb {
     color: #39c0ed !important;
 }
 
-.banner-picture {
-    box-shadow: 0px 0px 15px #39c0ed;
+.carousel-inner {
+    box-shadow: 0px 0px 10px #39c0ed;
 }
 
 .smokeShape {
@@ -137,9 +137,6 @@ html::-webkit-scrollbar-thumb {
 .btn-link:hover {
     background: #262626;
 }
-/* .btn-primary {
-    background: #38bdf8;
-} */
 
 .card {
     background: #182233;
@@ -177,10 +174,6 @@ html::-webkit-scrollbar-thumb {
     width: 40px;
     max-height: 40px;
 }
-
-/* .project-card {
-    width: calc(100% / 3 - 1rem);
-} */
 
 .page-header {
     background: linear-gradient(
@@ -291,6 +284,22 @@ html::-webkit-scrollbar-thumb {
         rgba(255, 162, 0, 0.99)
     );
 }
+
+.gr-btn {
+    transition: 00.2s;
+    border-radius: 10px;
+}
+.gr-btn:hover {
+    background: linear-gradient(
+        to bottom right,
+        rgba(57, 125, 192, 0.99) 40%,
+        rgba(255, 162, 0, 0.99)
+    );
+    border: none;
+    transform: scale(1.05);
+    color: #fff !important;
+}
+
 .hire-me-bg .card-title {
     font-weight: 700;
 }
@@ -309,9 +318,8 @@ html::-webkit-scrollbar-thumb {
     .banner .intro .designation {
         font-size: 1.2rem;
     }
-    .banner-picture {
-        padding: 3rem 5% 1rem 5%;
-    }
+    /* .banner-picture {
+    } */
     .skill-title {
         font-size: 16px;
     }
