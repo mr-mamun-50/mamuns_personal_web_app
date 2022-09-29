@@ -1,13 +1,8 @@
-@font-face {
-    font-family: "google-sans";
-    src: url(../Google-sans-Font-Family/ProductSans-Regular.ttf);
-}
-
 body {
     /* background: url(../images/asset_img/body-bg-dark-01.svg); */
     background: #0e1629;
     background-size: 100%;
-    font-family: "google-sans", sans-serif;
+    font-family: "Product Sans", sans-serif;
 }
 
 *::selection {
@@ -92,17 +87,19 @@ html::-webkit-scrollbar-thumb {
 }
 .banner .intro .hi {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .banner .intro .designation {
     font-size: 1.5rem;
     font-weight: 200;
     margin-bottom: 1rem;
+    color: #ccc;
 }
 .banner .intro .short-desc {
     color: #f2f2f2;
     font-weight: 200;
+    color: #ccc;
 }
 
 .banner .intro .heading:hover,
@@ -117,7 +114,7 @@ html::-webkit-scrollbar-thumb {
     block-size: 100rem 10rem;
     filter: drop-shadow(0 -0.1rem 0.1rem rgba(0, 0, 0, 0.2));
     animation: animate 10s linear infinite;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 @keyframes animate {
@@ -276,7 +273,7 @@ html::-webkit-scrollbar-thumb {
 .show_btn {
     background: linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0) 0%,
+        rgba(24, 34, 51, 0) 0%,
         rgba(24, 34, 51, 0.9) 50%,
         rgba(24, 34, 51, 0.9)
     );
@@ -302,7 +299,7 @@ html::-webkit-scrollbar-thumb {
         /* text-align: center; */
     }
     .banner .intro .designation {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .banner-picture {
         padding: 3rem 5% 1rem 5%;
@@ -314,5 +311,40 @@ html::-webkit-scrollbar-thumb {
 @media screen and (max-width: 1200px) {
     .banner {
         padding-top: 8%;
+    }
+}
+
+.hand_wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0deg);
     }
 }

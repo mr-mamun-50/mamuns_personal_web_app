@@ -6,9 +6,9 @@
         <div class="container d-md-flex align-items-center position-relative">
 
             <div class="intro col-md-6 mt-5">
-                <h2 class="hi text-warning">Hi,,,</h2>
+                <h2 class="hi text-warning">Hi <span class="hand_wave">👋</span></h2>
                 <h1 class="heading text-white">I'm Mamunur Rashid Mamun</h1>
-                <p class="designation text-light">Web App Developer || Mobile App Developer</p>
+                <p class="designation">Web App Developer || Mobile App Developer</p>
 
                 <p class="short-desc mt-4"><i class="fas fa-quote-left"></i><br> I work with perfection and find a simple
                     solution
@@ -20,11 +20,11 @@
                 <div class="buttuns my-sm-4">
                     {{-- <a href="https://github.com/mr-mamun-50" class="btn btn-primary me-2" target="blank"><i
                             class="fa-brands fa-github fa-xl me-1"></i> Github</a> --}}
-                    <button class="btn btn-light btn-lg me-2" type="button" data-bs-toggle="modal"
-                        data-bs-target="#hireMe"><i class="fas fa-user-check  fa-xl me-1"></i> Hire Me</button>
+                    <button class="btn btn-light me-2" type="button" data-bs-toggle="modal" data-bs-target="#hireMe"><i
+                            class="fas fa-user-check  fa-xl me-1"></i> Hire Me</button>
 
-                    <a href="#" class="btn btn-outline-light btn-lg"><i
-                            class="fa-solid fa-user-graduate  fa-xl me-1"></i> Get CV</a>
+                    <a href="#" class="btn btn-outline-light"><i class="fa-solid fa-user-graduate  fa-xl me-1"></i>
+                        Get CV</a>
                 </div>
             </div>
 
@@ -240,7 +240,7 @@
 
     {{-- Hire me section started --}}
     <section class="container pt-10 d-flex justify-content-center">
-        <div class="col-md-10 col-lg-8 rounded-9 bg-white">
+        <div class="col-md-10 col-lg-8 rounded-9">
 
             <div class="card rounded-9 hire-me-bg">
                 <div class="card-body d-md-flex align-items-center py-5 px-md-5">
@@ -259,6 +259,7 @@
 
                 </div>
             </div>
+        </div>
     </section>
 
 
