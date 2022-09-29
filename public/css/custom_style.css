@@ -107,6 +107,10 @@ html::-webkit-scrollbar-thumb {
     color: #39c0ed !important;
 }
 
+.banner-picture {
+    box-shadow: 0px 0px 20px #b23cfd;
+}
+
 .smokeShape {
     height: 9rem;
     width: 100%;
@@ -144,7 +148,8 @@ html::-webkit-scrollbar-thumb {
     background: #0e1629;
 }
 .card span,
-.card h5 {
+.card h5,
+.card b {
     color: #fff;
 }
 .card p,
@@ -285,6 +290,9 @@ html::-webkit-scrollbar-thumb {
         rgba(57, 125, 192, 0.99) 40%,
         rgba(255, 162, 0, 0.99)
     );
+}
+.hire-me-bg .card-title {
+    font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {

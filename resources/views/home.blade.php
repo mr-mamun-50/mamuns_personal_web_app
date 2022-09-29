@@ -6,7 +6,7 @@
         <div class="container d-md-flex align-items-center position-relative">
 
             <div class="intro col-md-6 mt-5">
-                <h2 class="hi text-warning">Hi <span class="hand_wave">👋</span></h2>
+                <h2 class="hi text-warning">Hi<span class="hand_wave">👋</span></h2>
                 <h1 class="heading text-white">I'm Mamunur Rashid Mamun</h1>
                 <p class="designation">Web App Developer || Mobile App Developer</p>
 
@@ -29,8 +29,8 @@
             </div>
 
             {{-- <div class="banner-picture col-md-6 p-md-5 mt-md-5 bg-info"> --}}
-            <img class="img-fluid banner-picture col-md-6 p-md-5 mt-md-5"
-                src="{{ asset('public/images/asset_img/macbook.svg') }}" alt="">
+            <img class="img-fluid banner-picture col-md-6 py-m-5 mt-md-5"
+                src="{{ asset('public/images/asset_img/macbook.png') }}" alt="">
             {{-- </div> --}}
         </div>
 
