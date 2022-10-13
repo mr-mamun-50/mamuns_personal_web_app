@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('video_link');
             $table->string('post_date');
-            $table->string('position')->nullable();
+            $table->integer('position');
             $table->string('thumbnail')->nullable();
             $table->integer('visibility')->nullable()->default(0);
             $table->timestamps();
