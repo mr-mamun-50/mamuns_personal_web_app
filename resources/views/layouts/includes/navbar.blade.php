@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top py-0">
+<nav class="py-0 navbar navbar-expand-lg navbar-dark bg-dark text-light fixed-top">
     <!-- Container wrapper -->
     <div class="container">
 
@@ -11,14 +11,14 @@
 
         <!-- Navbar brand -->
         <a class="navbar-brand" href="{{ route('home') }}">
-            <img src="{{ asset('public/images/asset_img/logo.png') }}" height="25" alt="M R Mamun" />
+            <img src="{{ asset('images/asset_img/logo.png') }}" height="25" alt="M R Mamun" />
         </a>
 
         <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse ms-3" id="navbarSupportedContent">
 
             <!-- Left links -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="mb-2 navbar-nav me-auto mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" href="{{ route('home') }}/#home">Home</a>
                 </li>
@@ -39,7 +39,7 @@
                 </li>
                 <li class="nav-item d-flex align-items-center ms-lg-3">
                     <div class="">
-                        <a class="nav-link btn btn-outline-light gr-btn py-2 px-3" data-bs-toggle="modal"
+                        <a class="px-3 py-2 nav-link btn btn-outline-light gr-btn" data-bs-toggle="modal"
                             data-bs-target="#ContactMe">Contact</a>
                     </div>
                 </li>
@@ -58,9 +58,9 @@
                 <i class="fab fa-linkedin"></i>
             </a>
 
-            <a class="text-reset btn btn-rounded shadow-2 border p-0" href="https://github.com/mr-mamun-50"
+            <a class="p-0 border text-reset btn btn-rounded shadow-2" href="https://github.com/mr-mamun-50"
                 target="blank">
-                <i class="fab fa-github fa-lg mx-2"></i>
+                <i class="mx-2 fab fa-github fa-lg"></i>
                 <img src="https://avatars.githubusercontent.com/u/76045663?v=4" class="rounded-circle" height="30"
                     alt="Profile" />
             </a>
@@ -87,13 +87,13 @@
                 <div class="modal-body">
 
                     <!-- Name input -->
-                    <div class="form-outline mb-4">
+                    <div class="mb-4 form-outline">
                         <input type="text" name="name" id="form4Example1" class="form-control" required />
                         <label class="form-label" for="form4Example1">Name <span class="text-danger">*</span></label>
                     </div>
 
                     <!-- Email input -->
-                    <div class="form-outline mb-4">
+                    <div class="mb-4 form-outline">
                         <input type="email" name="email" id="form4Example2" class="form-control" required />
                         <label class="form-label" for="form4Example2">Email address
                             <span class="text-danger">*</span></label>

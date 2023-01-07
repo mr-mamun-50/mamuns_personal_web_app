@@ -7,7 +7,7 @@ $submenu = ''; ?>
 
 @section('content')
     <div class="card">
-        <div class="card-header bg-default text-dark py-2 px-4 d-flex justify-content-between align-items-center">
+        <div class="px-4 py-2 card-header bg-default text-dark d-flex justify-content-between align-items-center">
             <b>My Skills</b>
             <!-- Button trigger modal -->
             <button type="button" class="btn hor-grd btn-grd-primary btn-sm" data-toggle="modal" data-target="#staticBackdrop">
@@ -33,7 +33,7 @@ $submenu = ''; ?>
                         <tr>
                             <td>{{ $skill->position }}</td>
                             <td>
-                                <img src="{{ asset('public/images/skill_logos/' . $skill->logo) }}" alt=""
+                                <img src="{{ asset('images/skill_logos/' . $skill->logo) }}" alt=""
                                     style="width: 50px">
                             </td>
                             <td>{{ $skill->name }}</td>
@@ -49,14 +49,14 @@ $submenu = ''; ?>
 
                             <td>
                                 <div class="d-flex justify-content-center">
-                                    <button type="button" class="btn btn-primary mr-1 py-1 pb-0 pl-1 pr-0"
+                                    <button type="button" class="py-1 pb-0 pl-1 pr-0 mr-1 btn btn-primary"
                                         data-toggle="modal" data-target="#{{ 'editSkill' . $skill->id }}"><i
                                             class="bi bi-pencil-square"></i></button>
 
                                     <form action=" {{ route('skills.destroy', $skill->id) }} " method="post">
                                         @csrf
                                         <input type="hidden" name="_method" value="DELETE">
-                                        <button type="submit" class="btn btn-danger delete py-1 pb-0 pl-1 pr-0"><i
+                                        <button type="submit" class="py-1 pb-0 pl-1 pr-0 btn btn-danger delete"><i
                                                 class="bi bi-trash"></i></button>
                                     </form>
                                 </div>
@@ -70,7 +70,7 @@ $submenu = ''; ?>
                             data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
-                                    <div class="modal-header bg-default text-dark rounded">
+                                    <div class="rounded modal-header bg-default text-dark">
                                         <h5 class="modal-title" id="staticBackdropLabel">Edit {{ $skill->name }}</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
@@ -180,7 +180,7 @@ $submenu = ''; ?>
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header bg-default text-dark rounded">
+                    <div class="rounded modal-header bg-default text-dark">
                         <h5 class="modal-title" id="staticBackdropLabel">Add New Skill</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>

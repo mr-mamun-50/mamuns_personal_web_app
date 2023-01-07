@@ -7,7 +7,7 @@ $submenu = ''; ?>
 
 @section('content')
     <div class="card">
-        <div class="card-header bg-default text-dark py-2 px-4 d-flex justify-content-between align-items-center">
+        <div class="px-4 py-2 card-header bg-default text-dark d-flex justify-content-between align-items-center">
             <b>My Projects</b>
             <!-- Button trigger modal -->
             <button type="button" class="btn hor-grd btn-grd-primary btn-sm" data-toggle="modal" data-target="#staticBackdrop">
@@ -34,8 +34,8 @@ $submenu = ''; ?>
                         <tr>
                             <td>{{ $project->position }}</td>
                             <td>
-                                <img src="{{ asset('public/images/project_thumbnails/' . $project->thumbnail) }}"
-                                    alt="" style="width: 90px">
+                                <img src="{{ asset('images/project_thumbnails/' . $project->thumbnail) }}" alt=""
+                                    style="width: 90px">
                             </td>
                             <td>{{ $project->title }}</td>
                             <td>{{ $project->subtitle }}</td>
@@ -50,23 +50,23 @@ $submenu = ''; ?>
 
                             <td>
                                 <div class="d-flex justify-content-center">
-                                    <a href="{{ $project->github_link }}" class="btn btn-dark mr-1 py-1 pb-0 pl-1 pr-0"
+                                    <a href="{{ $project->github_link }}" class="py-1 pb-0 pl-1 pr-0 mr-1 btn btn-dark"
                                         target="blank"><i class="fab fa-github"></i></a>
-                                    <a href="{{ $project->live_link }}" class="btn btn-info mr-1 py-1 pb-0 pl-1 pr-0"
+                                    <a href="{{ $project->live_link }}" class="py-1 pb-0 pl-1 pr-0 mr-1 btn btn-info"
                                         target="blank"><i class="fas fa-globe"></i></a>
                                 </div>
                             </td>
 
                             <td>
                                 <div class="d-flex justify-content-center">
-                                    <button type="button" class="btn btn-primary mr-1 py-1 pb-0 pl-1 pr-0"
+                                    <button type="button" class="py-1 pb-0 pl-1 pr-0 mr-1 btn btn-primary"
                                         data-toggle="modal" data-target="#{{ 'editproject' . $project->id }}"><i
                                             class="bi bi-pencil-square"></i></button>
 
                                     <form action=" {{ route('projects.destroy', $project->id) }} " method="post">
                                         @csrf
                                         <input type="hidden" name="_method" value="DELETE">
-                                        <button type="submit" class="btn btn-danger delete py-1 pb-0 pl-1 pr-0"><i
+                                        <button type="submit" class="py-1 pb-0 pl-1 pr-0 btn btn-danger delete"><i
                                                 class="bi bi-trash"></i></button>
                                     </form>
                                 </div>
@@ -80,7 +80,7 @@ $submenu = ''; ?>
                             data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
-                                    <div class="modal-header bg-default text-dark rounded">
+                                    <div class="rounded modal-header bg-default text-dark">
                                         <h5 class="modal-title" id="staticBackdropLabel">Edit {{ $project->title }}</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
@@ -177,7 +177,7 @@ $submenu = ''; ?>
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header bg-default text-dark rounded">
+                    <div class="rounded modal-header bg-default text-dark">
                         <h5 class="modal-title" id="staticBackdropLabel">Add New Project</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>

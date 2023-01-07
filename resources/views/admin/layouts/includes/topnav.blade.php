@@ -16,7 +16,7 @@
                 </div>
             </div>
             <a href="{{ route('admin.dashboard') }}" class="pl-1">
-                <img class="d-flex mr-auto" src="{{ asset('public/images/asset_img/logo_white.png') }}" alt="M R Mamun"
+                <img class="mr-auto d-flex" src="{{ asset('images/asset_img/logo_white.png') }}" alt="M R Mamun"
                     style="height: 35px;" />
             </a>
             <a class="mobile-options">
@@ -52,7 +52,7 @@
 
                 <li class="user-profile header-notification">
                     <a href="#!">
-                        <img src="https://avatars.githubusercontent.com/u/76045663?v=4" class="img-radius border"
+                        <img src="https://avatars.githubusercontent.com/u/76045663?v=4" class="border img-radius"
                             alt="Admin">
                         <span>{{ Auth::guard('admin')->user()->name }}</span>
                         <i class="ti-angle-down"></i>
@@ -73,7 +73,7 @@
                             <form method="POST" action="{{ route('admin.logout') }}" name="logoutform">
                                 @csrf
 
-                                <button class="logout btn bg-transparent p-0" type="submit"><i
+                                <button class="p-0 bg-transparent logout btn" type="submit"><i
                                         class="bi bi-box-arrow-right"></i> Logout</button>
                             </form>
                         </li>

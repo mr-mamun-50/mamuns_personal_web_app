@@ -11,25 +11,24 @@
     <meta name="author" content="codedthemes">
 
     <!-- Favicon icon -->
-    <link rel="icon" href="{{ asset('public/images/asset_img/icon.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('images/asset_img/icon.png') }}" type="image/x-icon">
 
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 
     <!-- Required Fremwork -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/adm') }}/assets/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('adm') }}/assets/css/bootstrap/css/bootstrap.min.css">
 
     <!-- themify-icons line icon -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/adm') }}/assets/icon/themify-icons/themify-icons.css">
-    <link rel="stylesheet" type="text/css"
-        href="{{ asset('public/adm') }}/assets/icon/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('adm') }}/assets/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('adm') }}/assets/icon/font-awesome/css/font-awesome.min.css">
 
     <!-- ico font -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/adm') }}/assets/icon/icofont/css/icofont.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('adm') }}/assets/icon/icofont/css/icofont.css">
 
     <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/adm') }}/assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="{{ asset('public/adm') }}/assets/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('adm') }}/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('adm') }}/assets/css/jquery.mCustomScrollbar.css">
 
     <!-- FontAwesome 5.15.3 CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"

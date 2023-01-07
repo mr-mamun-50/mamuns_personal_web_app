@@ -1,4 +1,4 @@
-<div id="carouselExampleCrossfade" class="carousel slide carousel-fade col-md-6 mt-md-5 px-1 px-md-2 py-5"
+<div id="carouselExampleCrossfade" class="px-1 py-5 carousel slide carousel-fade col-md-6 mt-md-5 px-md-2"
     data-mdb-ride="carousel">
 
     {{-- <div class="carousel-indicators">
@@ -12,16 +12,13 @@
 
     <div class="carousel-inner rounded-5">
         <div class="carousel-item active" data-mdb-interval="4000">
-            <img class="img-fluid banner-picture" src="{{ asset('public/images/asset_img/macbook_js.png') }}"
-                alt="">
+            <img class="img-fluid banner-picture" src="{{ asset('images/asset_img/macbook_js.png') }}" alt="">
         </div>
         <div class="carousel-item" data-mdb-interval="5000">
-            <img class="img-fluid banner-picture" src="{{ asset('public/images/asset_img/macbook_php.png') }}"
-                alt="">
+            <img class="img-fluid banner-picture" src="{{ asset('images/asset_img/macbook_php.png') }}" alt="">
         </div>
         <div class="carousel-item" data-mdb-interval="4000">
-            <img class="img-fluid banner-picture" src="{{ asset('public/images/asset_img/macbook_dart.png') }}"
-                alt="">
+            <img class="img-fluid banner-picture" src="{{ asset('images/asset_img/macbook_dart.png') }}" alt="">
         </div>
     </div>
 

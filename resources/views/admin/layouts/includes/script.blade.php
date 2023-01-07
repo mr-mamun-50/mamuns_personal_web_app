@@ -1,33 +1,32 @@
 <!-- Required Jquery -->
-<script type="text/javascript" src="{{ asset('public/adm') }}/assets/js/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="{{ asset('public/adm') }}/assets/js/jquery-ui/jquery-ui.min.js"></script>
-<script type="text/javascript" src="{{ asset('public/adm') }}/assets/js/popper.js/popper.min.js"></script>
-<script type="text/javascript" src="{{ asset('public/adm') }}/assets/js/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ asset('adm') }}/assets/js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="{{ asset('adm') }}/assets/js/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="{{ asset('adm') }}/assets/js/popper.js/popper.min.js"></script>
+<script type="text/javascript" src="{{ asset('adm') }}/assets/js/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- jquery slimscroll js -->
-<script type="text/javascript" src="{{ asset('public/adm') }}/assets/js/jquery-slimscroll/jquery.slimscroll.js">
-</script>
+<script type="text/javascript" src="{{ asset('adm') }}/assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
 
 <!-- modernizr js -->
-<script type="text/javascript" src="{{ asset('public/adm') }}/assets/js/modernizr/modernizr.js"></script>
+<script type="text/javascript" src="{{ asset('adm') }}/assets/js/modernizr/modernizr.js"></script>
 
 <!-- am chart -->
-<script src="{{ asset('public/adm') }}/assets/pages/widget/amchart/amcharts.min.js"></script>
-<script src="{{ asset('public/adm') }}/assets/pages/widget/amchart/serial.min.js"></script>
+<script src="{{ asset('adm') }}/assets/pages/widget/amchart/amcharts.min.js"></script>
+<script src="{{ asset('adm') }}/assets/pages/widget/amchart/serial.min.js"></script>
 
 <!-- Chart js -->
-<script type="text/javascript" src="{{ asset('public/adm') }}/assets/js/chart.js/Chart.js"></script>
+<script type="text/javascript" src="{{ asset('adm') }}/assets/js/chart.js/Chart.js"></script>
 
 <!-- Todo js -->
-<script type="text/javascript " src="{{ asset('public/adm') }}/assets/pages/todo/todo.js "></script>
+<script type="text/javascript " src="{{ asset('adm') }}/assets/pages/todo/todo.js "></script>
 
 <!-- Custom js -->
-<script type="text/javascript" src="{{ asset('public/adm') }}/assets/pages/dashboard/custom-dashboard.min.js"></script>
-<script type="text/javascript" src="{{ asset('public/adm') }}/assets/js/script.js"></script>
-<script type="text/javascript " src="{{ asset('public/adm') }}/assets/js/SmoothScroll.js"></script>
-<script src="{{ asset('public/adm') }}/assets/js/pcoded.min.js"></script>
-<script src="{{ asset('public/adm') }}/assets/js/vartical-demo.js"></script>
-<script src="{{ asset('public/adm') }}/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="{{ asset('adm') }}/assets/pages/dashboard/custom-dashboard.min.js"></script>
+<script type="text/javascript" src="{{ asset('adm') }}/assets/js/script.js"></script>
+<script type="text/javascript " src="{{ asset('adm') }}/assets/js/SmoothScroll.js"></script>
+<script src="{{ asset('adm') }}/assets/js/pcoded.min.js"></script>
+<script src="{{ asset('adm') }}/assets/js/vartical-demo.js"></script>
+<script src="{{ asset('adm') }}/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <!-- Toastr js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
@@ -139,7 +138,7 @@
             .appendTo('#myDataTable_wrapper .col-md-6:eq(0)');
     });
 </script>
-<script type="text/javascript" charset="utf8" src="{{ asset('public/adm/buttons.bootstrap4.min.js') }}"></script>
+<script type="text/javascript" charset="utf8" src="{{ asset('adm/buttons.bootstrap4.min.js') }}"></script>
 
 <!-- Summernote script -->
 <script>

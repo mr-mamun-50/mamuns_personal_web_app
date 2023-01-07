@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mamunur Rashid Mamun</title>
 
-    <link rel="shortcut icon" href="{{ asset('public/images/asset_img/header_image_frame-01.png') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/asset_img/header_image_frame-01.png') }}" type="image/x-icon">
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,7 +15,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
 
     <!-- Custom css -->
-    <link rel="stylesheet" href="{{ asset('public/css/custom_style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom_style.css') }}">
 
     <!-- Fonts -->
     <link href="http://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
